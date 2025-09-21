@@ -193,9 +193,6 @@ header {
     align-items: center;
     justify-content: center;
     padding: 70px 20px;
-}
-
-.tutorial-section {
     background-color: #D9EEE1;
 }
 
@@ -208,7 +205,7 @@ header {
 }
 
 .javascript-section .tutorial-left h1 {
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 .javascript-section .tutorial-left p {
@@ -1548,12 +1545,7 @@ header {
     line-height: 1.6;
 }
 
-.tutorial-section {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    border-left: 4px solid #04AA6D;
-}
+/* Removed duplicate tutorial-section rule that was overriding background colors */
 
 .tutorial-section h2 {
     color: #04AA6D;
