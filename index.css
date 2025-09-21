@@ -87,18 +87,22 @@ header {
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 25px;
-    padding: 10px 10px;
+    padding: 8px 15px;
     width: 230px;
     height: 40px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .search-box input {
     border: none;
     outline: none;
     flex: 1;
-    padding: 8px;
+    padding: 8px 12px;
     font-size: 14px;
-    border-radius: 25px;
+    background: transparent;
+    border-radius: 0;
 }
 
 .search-box input::placeholder {
@@ -110,11 +114,44 @@ header {
     background: none;
     border: none;
     cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
 }
 
 .search-box button i {
     font-size: 16px;
     color: #000;
+}
+
+.search-box:hover {
+    border-color: #04AA6D;
+    background-color: #fff !important;
+}
+
+.search-box:hover button {
+    background-color: #04AA6D;
+}
+
+.search-box:hover button i {
+    color: #fff;
+}
+
+.search-box:hover input {
+    background-color: #fff !important;
+    color: #000;
+}
+
+/* Ensure search box is not affected by parent hover states */
+.nav-links:hover .search-box {
+    background-color: #fff !important;
+}
+
+.nav-main:hover .search-box {
+    background-color: #fff !important;
 }
 
 /* Tutorials Navigation */
