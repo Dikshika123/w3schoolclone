@@ -240,17 +240,18 @@ header {
 }
 
 .tutorial-content {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 50px;
+    gap: 40px;
 }
 
 .tutorial-left {
     flex: 1;
-    max-width: 500px;
+    max-width: 600px;
+    min-width: 450px;
 }
 
 .tutorial-left h1 {
@@ -258,18 +259,22 @@ header {
     font-weight: 700;
     margin-bottom: 20px;
     color: black;
+    text-align: center;
 }
 
 .tutorial-left p {
     font-size: 19px;
     color: #282A35;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .button-group {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 20px;
+    align-items: center;
 }
 
 .btn {
@@ -905,6 +910,7 @@ header {
     .tutorial-right {
         max-width: 600px;
         width: 100%;
+        flex: 1;
     }
 
     .tutorial-right {
