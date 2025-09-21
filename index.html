@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3Schools Clone</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+            <div class="nav-brand">
+                <a href="Html.html" class="logo">
+                    <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <div class="nav-item">
+                    <span>Tutorials</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="nav-item">
+                    <span>References</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="nav-item">
+                    <span>Exercises</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="nav-item">
+                    <span>Certificates</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search ..." class="search-input">
+                    <button class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <!-- Right side content -->
+            </div>
+        </nav>
+
+        <nav class="nav-tutorials">
+            <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+            <div class="tutorials-container" id="menu">
+                <a href="Html.html" class="tutorial-item">HTML</a>
+                <a href="./cssfolder/css.html" class="tutorial-item">CSS</a>
+                    <a href="./cssfolder/Javascript/jstutorial.html" class="tutorial-item">JAVASCRIPT</a>
+                <a href="./cssfolder/SQL/sqltutorial.html" class="tutorial-item">SQL</a>
+                <a href="#" class="tutorial-item">PYTHON</a>
+                <a href="#" class="tutorial-item">JAVA</a>
+                <a href="#" class="tutorial-item">PHP</a>
+                <a href="cssfolder/HowTo.html" class="tutorial-item">HOW TO</a>
+                <a href="#" class="tutorial-item">W3.CSS</a>
+                <a href="#" class="tutorial-item">C</a>
+                <a href="#" class="tutorial-item">C++</a>
+                <a href="#" class="tutorial-item">C#</a>
+                <a href="#" class="tutorial-item">BOOTSTRAP</a>
+                <a href="#" class="tutorial-item">REACT</a>
+                <a href="#" class="tutorial-item">MYSQL</a>
+                <a href="#" class="tutorial-item">JQUERY</a>
+                <a href="#" class="tutorial-item">EXCEL</a>
+                <a href="#" class="tutorial-item">XML</a>
+                <a href="#" class="tutorial-item">DJANGO</a>
+                <a href="#" class="tutorial-item">NUMPY</a>
+                <a href="#" class="tutorial-item">DSA</a>
+                <a href="#" class="tutorial-item">Nodejs</a>
+                <a href="#" class="tutorial-item">DSA</a>
+                <a href="#" class="tutorial-item">Typescript</a>
+                <a href="#" class="tutorial-item">Angular</a>
+                <a href="#" class="tutorial-item">Angular js</a>
+            </div>
+            <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+        </nav>
+    </header>
+
+    <main class="hero-section">
+        <h1>Learn to code</h1>
+        <p class="subtitle">With the world's largest web developer site.</p>
+        <div class="search-container">
+            <input type="text" placeholder="Search our tutorials, e.g. HTML" class="search-input">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <a href="#" class="where-begin">Not Sure Where To Begin?</a>
+    </main>
+
+    <!-- Tutorial Sections -->
+    <section class="tutorial-section">
+        <!-- HTML Section -->
+        <div class="tutorial-content">
+            <div class="tutorial-left">
+                <h1>HTML</h1>
+                <p>The language for building web pages</p>
+                <div class="button-group">
+                    <a href="#" class="btn learn-btn">Learn HTML</a>
+                    <a href="#" class="btn video-btn">Video Tutorial</a>
+                    <a href="#" class="btn reference-btn">HTML Reference</a>
+                    <a href="#" class="btn certified-btn">Get Certified</a>
+                </div>
+            </div>
+            <div class="tutorial-right">
+                <div class="example-box">
+                    <h2>HTML Example:</h2>
+                    <div class="code-box">
+                        <pre><code><span class="code-gray">&lt;!DOCTYPE html&gt;</span>
+<span class="code-brown">&lt;html&gt;</span>
+<span class="code-brown">&lt;head&gt;</span>
+<span class="code-brown">&lt;title&gt;</span>HTML Tutorial<span class="code-brown">&lt;/title&gt;</span>
+<span class="code-brown">&lt;/head&gt;</span>
+<span class="code-brown">&lt;body&gt;</span>
+
+<span class="code-brown">&lt;h1&gt;</span>This is a heading<span class="code-brown">&lt;/h1&gt;</span>
+<span class="code-brown">&lt;p&gt;</span>This is a paragraph.<span class="code-brown">&lt;/p&gt;</span>
+
+<span class="code-brown">&lt;/body&gt;</span>
+<span class="code-brown">&lt;/html&gt;</span></code></pre>
+                    </div>
+                    <a href="#" class="try-btn">Try it Yourself</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS Section -->
+    <section class="tutorial-section css-section">
+        <div class="tutorial-content">
+            <div class="tutorial-left">
+                <h1>CSS</h1>
+                <p>The language for styling web pages</p>
+                <div class="button-group">
+                    <a href="#" class="btn learn-btn">Learn CSS</a>
+                    <a href="#" class="btn reference-btn">CSS Reference</a>
+                    <a href="#" class="btn certified-btn">Get Certified</a>
+                </div>
+            </div>
+            <div class="tutorial-right">
+                <div class="example-box">
+                    <h2>CSS Example:</h2>
+                    <div class="code-box">
+                        <pre><code><span class="code-selector">body</span> <span class="code-brace">{</span>
+  <span class="code-property">background-color</span><span class="code-colon">:</span> <span class="code-value">lightblue</span><span class="code-semicolon">;</span>
+<span class="code-brace">}</span>
+
+<span class="code-selector">h1</span> <span class="code-brace">{</span>
+  <span class="code-property">color</span><span class="code-colon">:</span> <span class="code-value">white</span><span class="code-semicolon">;</span>
+  <span class="code-property">text-align</span><span class="code-colon">:</span> <span class="code-value">center</span><span class="code-semicolon">;</span>
+<span class="code-brace">}</span>
+
+<span class="code-selector">p</span> <span class="code-brace">{</span>
+  <span class="code-property">font-family</span><span class="code-colon">:</span> <span class="code-value">verdana</span><span class="code-semicolon">;</span>
+  <span class="code-property">font-size</span><span class="code-colon">:</span> <span class="code-value">20px</span><span class="code-semicolon">;</span>
+<span class="code-brace">}</span></code></pre>
+                    </div>
+                    <a href="#" class="try-btn">Try it Yourself</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Section -->
+    <section class="tutorial-section javascript-section">
+        <div class="tutorial-content">
+            <div class="tutorial-left">
+                <h1>JavaScript</h1>
+                <p>The language for programming web pages</p>
+                <div class="button-group">
+                    <a href="cssfolder/Javascript/jstutorial.html" class="btn learn-btn">Learn JavaScript</a>
+                    <a href="#" class="btn reference-btn">JavaScript Reference</a>
+                    <a href="#" class="btn certified-btn">Get Certified</a>
+                </div>
+            </div>
+            <div class="tutorial-right">
+                <div class="example-box">
+                    <h2>JavaScript Example:</h2>
+                    <div class="code-box">
+                        <pre><code><span class="code-tag">&lt;button</span> <span class="code-attr">onclick</span><span class="code-equals">=</span><span class="code-string">"myFunction()"</span><span class="code-tag">&gt;</span>Click Me!<span class="code-tag">&lt;/button&gt;</span>
+
+<span class="code-tag">&lt;script&gt;</span>
+<span class="code-keyword">function</span> <span class="code-function">myFunction</span><span class="code-brace">()</span> <span class="code-brace">{</span>
+  <span class="code-keyword">let</span> <span class="code-variable">x</span> <span class="code-operator">=</span> <span class="code-object">document</span><span class="code-dot">.</span><span class="code-method">getElementById</span><span class="code-brace">(</span><span class="code-string">"demo"</span><span class="code-brace">)</span><span class="code-semicolon">;</span>
+  <span class="code-variable">x</span><span class="code-dot">.</span><span class="code-property">style</span><span class="code-dot">.</span><span class="code-property">fontSize</span> <span class="code-operator">=</span> <span class="code-string">"25px"</span><span class="code-semicolon">;</span>
+  <span class="code-variable">x</span><span class="code-dot">.</span><span class="code-property">style</span><span class="code-dot">.</span><span class="code-property">color</span> <span class="code-operator">=</span> <span class="code-string">"red"</span><span class="code-semicolon">;</span>
+<span class="code-brace">}</span>
+<span class="code-tag">&lt;/script&gt;</span></code></pre>
+                    </div>
+                    <a href="#" class="try-btn">Try it Yourself</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Python Section -->
+    <section class="tutorial-section python-section">
+        <div class="tutorial-content">
+            <div class="tutorial-left">
+                <h1>Python</h1>
+                <p>A popular programming language</p>
+                <div class="button-group">
+                    <a href="#" class="btn learn-btn">Learn Python</a>
+                    <a href="#" class="btn reference-btn">Python Reference</a>
+                    <a href="#" class="btn certified-btn">Get Certified</a>
+                </div>
+            </div>
+            <div class="tutorial-right">
+                <div class="example-box">
+                    <h2>Python Example:</h2>
+                    <div class="code-box">
+                        <pre><code><span class="code-keyword">if</span> <span class="code-number">5</span> <span class="code-operator">&gt;</span> <span class="code-number">2</span><span class="code-colon">:</span>
+    <span class="code-function">print</span><span class="code-brace">(</span><span class="code-string">"Five is greater than two!"</span><span class="code-brace">)</span></code></pre>
+                    </div>
+                    <a href="#" class="try-btn">Try it Yourself</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SQL Section -->
+    <section class="tutorial-section sql-section">
+        <div class="tutorial-content">
+            <div class="tutorial-left">
+                <h1>SQL</h1>
+                <p>A language for accessing databases</p>
+                <div class="button-group">
+                    <a href="./cssfolder/SQL/sqltutorial.html" class="btn learn-btn">Learn SQL</a>
+                    <a href="./cssfolder/SQL/sqltutorial.html" class="btn reference-btn">SQL Reference</a>
+                    <a href="#" class="btn certified-btn">Get Certified</a>
+                </div>
+            </div>
+            <div class="tutorial-right">
+                <div class="example-box">
+                    <h2>SQL Example:</h2>
+                    <div class="code-box">
+                        <pre><code><span class="code-keyword">SELECT</span> <span class="code-operator">*</span> <span class="code-keyword">FROM</span> <span class="code-table">Customers</span>
+<span class="code-keyword">WHERE</span> <span class="code-column">Country</span><span class="code-operator">=</span><span class="code-string">'Mexico'</span><span class="code-semicolon">;</span></code></pre>
+                    </div>
+                    <a href="#" class="try-btn">Try it Yourself</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language Cards Grid -->
+    <section class="cards-container">
+        <div class="cards-grid">
+            <div class="language-card php-card">
+                <h2>PHP</h2>
+                <p>A web server programming language</p>
+                <a href="#" class="card-btn">Learn PHP</a>
+            </div>
+            <div class="language-card jquery-card">
+                <h2>jQuery</h2>
+                <p>A JS library for developing web pages</p>
+                <a href="#" class="card-btn">Learn jQuery</a>
+            </div>
+            <div class="language-card java-card">
+                <h2>Java</h2>
+                <p>A programming language</p>
+                <a href="#" class="card-btn">Learn Java</a>
+            </div>
+            <div class="language-card cpp-card">
+                <h2>C++</h2>
+                <p>A programming language</p>
+                <a href="#" class="card-btn">Learn C++</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Language Cards Grid -->
+    <section class="cards-container">
+        <div class="cards-grid">
+            <div class="language-card w3css-card">
+                <h2>W3.CSS</h2>
+                <p>A CSS framework for faster and better responsive web pages</p>
+                <a href="#" class="card-btn">Learn W3.CSS</a>
+            </div>
+            <div class="language-card bootstrap-card">
+                <h2>Bootstrap</h2>
+                <p>A CSS framework for designing better web pages</p>
+                <a href="#" class="card-btn">Learn Bootstrap</a>
+            </div>
+            <div class="language-card c-card">
+                <h2>C</h2>
+                <p>A programming language</p>
+                <a href="#" class="card-btn">Learn C</a>
+            </div>
+            <div class="language-card csharp-card">
+                <h2>C#</h2>
+                <p>A programming language</p>
+                <a href="#" class="card-btn">Learn C#</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Small Language Cards Grid -->
+    <section class="small-cards-container">
+        <div class="small-cards-grid">
+            <div class="small-card r-card">
+                <h2>R</h2>
+            </div>
+            <div class="small-card kotlin-card">
+                <h2>Kotlin</h2>
+            </div>
+            <div class="small-card nodejs-card">
+                <h2>Node.js</h2>
+            </div>
+            <div class="small-card react-card">
+                <h2>React</h2>
+            </div>
+            <div class="small-card json-card">
+                <h2>JSON</h2>
+            </div>
+            <div class="small-card vue-card">
+                <h2>Vue</h2>
+            </div>
+            <div class="small-card mysql-card">
+                <h2>MySQL</h2>
+            </div>
+            <div class="small-card xml-card">
+                <h2>XML</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extended Small Cards Grid -->
+    <section class="extended-cards-container">
+        <div class="extended-cards-grid">
+            <div class="small-card sass-card">
+                <h2>Sass</h2>
+            </div>
+            <div class="small-card icons-card">
+                <h2>Icons</h2>
+            </div>
+            <div class="small-card rwd-card">
+                <h2>RWD</h2>
+            </div>
+            <div class="small-card graphics-card">
+                <h2>Graphics</h2>
+            </div>
+            <div class="small-card svg-card">
+                <h2>SVG</h2>
+            </div>
+            <div class="small-card canvas-card">
+                <h2>Canvas</h2>
+            </div>
+            <div class="small-card raspberry-pi-card">
+                <h2>Raspberry Pi</h2>
+            </div>
+            <div class="small-card cyber-security-card">
+                <h2>Cyber Security</h2>
+            </div>
+            <div class="small-card colors-card">
+                <h2>Colors</h2>
+            </div>
+            <div class="small-card git-card">
+                <h2>Git</h2>
+            </div>
+            <div class="small-card matplotlib-card">
+                <h2>Matplotlib</h2>
+            </div>
+            <div class="small-card numpy-card">
+                <h2>NumPy</h2>
+            </div>
+            <div class="small-card pandas-card">
+                <h2>Pandas</h2>
+            </div>
+            <div class="small-card scipy-card">
+                <h2>SciPy</h2>
+            </div>
+            <div class="small-card asp-card">
+                <h2>ASP</h2>
+            </div>
+            <div class="small-card angularjs-card">
+                <h2>AngularJS</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Large Cards Grid -->
+    <section class="large-cards-container">
+        <div class="large-cards-grid">
+            <div class="large-card excel-card">
+                <h2>Excel</h2>
+            </div>
+            <div class="large-card dsa-card">
+                <h2>DSA - Data Structures and Algorithms</h2>
+            </div>
+            <div class="large-card ml-card">
+                <h2>Machine Learning</h2>
+            </div>
+            <div class="large-card ai-card">
+                <h2>Artificial Intelligence</h2>
+            </div>
+            <div class="large-card intro-card">
+                <h2>Introduction to Programming</h2>
+            </div>
+            <div class="large-card bash-card">
+                <h2>Bash</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plus User Section -->
+    <section class="plus-section">
+        <div class="plus-content">
+            <h1>Become a Plus User</h1>
+            <p class="subtitle">And unlock powerful features:</p>
+            <div class="plus-features">
+                <div class="plus-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Browse W3Schools without ads</span>
+                </div>
+                <div class="plus-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Build and host Websites</span>
+                </div>
+                <div class="plus-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Unlimited challenges</span>
+                </div>
+                <div class="plus-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Unlimited practice tests</span>
+                </div>
+                <div class="plus-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Get extra credits</span>
+                </div>
+                <div class="plus-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Priority support</span>
+                </div>
+            </div>
+            <a href="#" class="plus-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Exercise and Quiz Section -->
+    <section class="exercise-quiz-section">
+        <div class="exercise-quiz-content">
+            <h1>Exercises and Quizzes</h1>
+            <p>Test your skills!</p>
+            <div class="exercise-quiz-cards">
+                <div class="quiz-card exercise">
+                    <h2>Exercises</h2>
+                </div>
+                <div class="quiz-card quizzes">
+                    <h2>Quizzes</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Section -->
+    <section class="career-section">
+        <div class="career-content">
+            <h1>Kickstart Your Career</h1>
+            <p>Get certified by completing a course</p>
+            <a href="#" class="career-button">Get Started</a>
+        </div>
+        <div class="circle">
+        <h1>W3schools</h1>
+        
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-logo">
+                <span class="footer-logo-w3">W3</span>
+                <span class="footer-logo-schools">schools</span>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">PLUS</a>
+                <a href="#" class="footer-link">SPACES</a>
+                <a href="#" class="footer-link">GET CERTIFIED</a>
+                <a href="#" class="footer-link">FOR TEACHERS</a>
+                <a href="#" class="footer-link">FOR BUSINESS</a>
+                <a href="#" class="footer-link">CONTACT US</a>
+            </div>
+        </div>
+        
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Top Tutorials</h3>
+                <ul>
+                    <li><a href="#">HTML Tutorial</a></li>
+                    <li><a href="#">CSS Tutorial</a></li>
+                    <li><a href="#">JavaScript Tutorial</a></li>
+                    <li><a href="#">How To Tutorial</a></li>
+                    <li><a href="./cssfolder/SQL/sqltutorial.html">SQL Tutorial</a></li>
+                    <li><a href="#">Python Tutorial</a></li>
+                    <li><a href="#">W3.CSS Tutorial</a></li>
+                    <li><a href="#">Bootstrap Tutorial</a></li>
+                    <li><a href="#">PHP Tutorial</a></li>
+                    <li><a href="#">Java Tutorial</a></li>
+                    <li><a href="#">C++ Tutorial</a></li>
+                    <li><a href="#">jQuery Tutorial</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Top References</h3>
+                <ul>
+                    <li><a href="#">HTML Reference</a></li>
+                    <li><a href="#">CSS Reference</a></li>
+                    <li><a href="#">JavaScript Reference</a></li>
+                    <li><a href="./cssfolder/SQL/sqltutorial.html">SQL Reference</a></li>
+                    <li><a href="#">Python Reference</a></li>
+                    <li><a href="#">W3.CSS Reference</a></li>
+                    <li><a href="#">Bootstrap Reference</a></li>
+                    <li><a href="#">PHP Reference</a></li>
+                    <li><a href="#">HTML Colors</a></li>
+                    <li><a href="#">Java Reference</a></li>
+                    <li><a href="#">Angular Reference</a></li>
+                    <li><a href="#">jQuery Reference</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Top Examples</h3>
+                <ul>
+                    <li><a href="#">HTML Examples</a></li>
+                    <li><a href="#">CSS Examples</a></li>
+                    <li><a href="#">JavaScript Examples</a></li>
+                    <li><a href="#">How To Examples</a></li>
+                    <li><a href="./cssfolder/SQL/sqltutorial.html">SQL Examples</a></li>
+                    <li><a href="#">Python Examples</a></li>
+                    <li><a href="#">W3.CSS Examples</a></li>
+                    <li><a href="#">Bootstrap Examples</a></li>
+                    <li><a href="#">PHP Examples</a></li>
+                    <li><a href="#">Java Examples</a></li>
+                    <li><a href="#">XML Examples</a></li>
+                    <li><a href="#">jQuery Examples</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Get Certified</h3>
+                <ul>
+                    <li><a href="#">HTML Certificate</a></li>
+                    <li><a href="#">CSS Certificate</a></li>
+                    <li><a href="#">JavaScript Certificate</a></li>
+                    <li><a href="#">Front End Certificate</a></li>
+                    <li><a href="./cssfolder/SQL/sqltutorial.html">SQL Certificate</a></li>
+                    <li><a href="#">Python Certificate</a></li>
+                    <li><a href="#">PHP Certificate</a></li>
+                    <li><a href="#">jQuery Certificate</a></li>
+                    <li><a href="#">Java Certificate</a></li>
+                    <li><a href="#">C++ Certificate</a></li>
+                    <li><a href="#">C# Certificate</a></li>
+                    <li><a href="#">XML Certificate</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <div class="footer-nav">
+                <a href="#" class="footer-nav-link">FORUM</a>
+                <a href="#" class="footer-nav-link">ABOUT</a>
+                <a href="#" class="footer-nav-link">ACADEMY</a>
+            </div>
+            
+            <div class="footer-text">
+                <p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our <a href="#">terms of use</a>, <a href="#">cookie and privacy policy</a>.</p>
+            </div>
+            
+           
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const menu = document.getElementById('menu');
+          const btnLeft = document.querySelector('.scroll-left');
+          const btnRight = document.querySelector('.scroll-right');
+    
+          if (!menu || !btnLeft || !btnRight) {
+            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
+            return;
+          }
+    
+          // Step size: ~70% of visible area so it feels natural on different screen sizes
+          const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
+    
+          // Update button disabled state (disable when at ends)
+          function updateButtons() {
+            const atStart = menu.scrollLeft <= 0;
+            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
+            btnLeft.disabled = atStart;
+            btnRight.disabled = atEnd;
+    
+            // debug log - remove if noisy
+            console.log({
+              scrollLeft: menu.scrollLeft,
+              clientWidth: menu.clientWidth,
+              scrollWidth: menu.scrollWidth,
+              atStart,
+              atEnd
+            });
+          }
+    
+          // Scroll handlers
+          btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
+          });
+    
+          btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
+          });
+    
+          // Update when the menu scrolls (user drag / wheel)
+          menu.addEventListener('scroll', () => {
+            // throttle-ish using requestAnimationFrame
+            window.requestAnimationFrame(updateButtons);
+          });
+    
+          // initial state + small safety check for CSS issues
+          updateButtons();
+    
+          // Debug helper: check computed styles that often cause problems
+          const cs = getComputedStyle(menu);
+          if (cs.display !== 'flex' || cs.overflowX === 'visible' || cs.flexWrap === 'wrap') {
+            console.warn('Check CSS for #menu — expected display:flex, overflow-x:auto and no wrapping.', {
+              display: cs.display,
+              overflowX: cs.overflowX,
+              flexWrap: cs.flexWrap
+            });
+          }
+    
+          // Ensure buttons update after smooth scroll finishes (some browsers need this)
+          menu.addEventListener('scrollend' /* not standard, but safe to keep */, updateButtons, { once: false });
+          // fallback: poll after clicks for a short time to catch end state
+          btnLeft.addEventListener('click', () => setTimeout(updateButtons, 300));
+          btnRight.addEventListener('click', () => setTimeout(updateButtons, 300));
+        });
+      </script>
+      
+        
+</body>
+</html>

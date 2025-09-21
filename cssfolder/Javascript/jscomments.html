@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Comments</title>
+    <link rel="stylesheet" href="../../../index.css">
+    <link rel="stylesheet" href="../../../Html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+        <div class="nav-brand">
+            <a href="../../../index.html" class="logo">
+                <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <div class="nav-item">
+                <span>Tutorials</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>References</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Exercises</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Certificates</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search ..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+
+    <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorials-container" id="menu">
+            <a href="../../../Html.html" class="tutorial-item">HTML</a>
+            <a href="../css.html" class="tutorial-item">CSS</a>
+            <a href="jstutorial.html" class="tutorial-item active">JAVASCRIPT</a>
+            <a href="#" class="tutorial-item">SQL</a>
+            <a href="#" class="tutorial-item">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="../cssfolder/HowTo.html" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+            <a href="#" class="tutorial-item">DSA</a>
+            <a href="#" class="tutorial-item">Nodejs</a>
+        </div>
+       <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+       
+    </nav>
+    </header>
+    <div class="container">
+        <div class="sidenavbar">
+            <h2>Basic javascript</h2>
+            <a href="jstutorial.html">Js Tutorial</a>
+            <a href="jsintro.html">Js Introduction</a>
+            <a href="jsWhereto.html">Js where to</a>
+            <a href="jsoutput.html">Js output</a>
+            <a href="Jssyntax.html">Js syntax</a>
+            <a href="Jsstatement.html">Js Statements</a>
+            <a href="Jscomments.html" class="active">Js comments</a>
+            <a href="Jsvariable.html">Js variables</a>
+            <a href="Jsdatatype.html">Js Data type</a>
+             <a href="Jslet.html"> Js let</a>
+             <a href="jsconst.html">Js const</a>
+             <a href="jsoperators.html">Js Operator</a>
+             <a href="jsarithmetic.html">js Arithmetic</a>
+             <a href="#">Js Assignment</a>
+             <a href="#">Js comparison</a>
+             <a href="#"> Js If else</a>
+             <a href="#">Js Switch</a>
+             <a href="#">Jsloop</a>
+             <a href="#"> Jsbreak</a>
+
+        </div>
+        <div class="main-content">
+            <h1>javascript comments</h1>
+            <p>JavaScript comments can be used to explain JavaScript code, and to make it more readable.</p>
+            <p>JavaScript comments can also be used to prevent execution, when testing alternative code</p>
+            <h1>Types of comments</h1>
+            <ul>
+                <li>Single line comments</li>
+                <li>Multi line comments</li>
+            </ul>
+            <h1>Single line comments</h1>
+            <p>Single line comments are used to comment out a single line of code.</p>
+            <h1>Multline comments</h1>
+            <p>multi line comments are used to comment our multiple lines of code.</p>
+           
+
+        </div>
+    
+    </div>
+    
+    <div class="nav-right">
+        <!-- Right side content -->
+    </div>
+    
+   
+     
+   
+<script>
+    // JavaScript functions for scroll buttons
+    function scrollLeft() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    }
+
+    function scrollRight() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    }
+
+    // Enhanced scroll functionality similar to index.html
+    document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.getElementById('menu');
+        const btnLeft = document.querySelector('.scroll-left');
+        const btnRight = document.querySelector('.scroll-right');
+
+        if (!menu || !btnLeft || !btnRight) {
+            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
+            return;
+        }
+
+        const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
+
+        function updateButtons() {
+            const atStart = menu.scrollLeft <= 0;
+            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
+            btnLeft.disabled = atStart;
+            btnRight.disabled = atEnd;
+        }
+
+        btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+
+        btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+
+        menu.addEventListener('scroll', () => {
+            window.requestAnimationFrame(updateButtons);
+        });
+
+        updateButtons();
+    });
+</script>
+    
+</body>
+</html>

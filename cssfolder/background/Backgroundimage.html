@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Image</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../..index.css">
+    <link rel="stylesheet" href="../../Html.css">
+   
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+            <div class="nav-brand">
+                <a href="../Html.html" class="logo">
+                    <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <div class="nav-item">
+                    <span>Tutorials</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="nav-item">
+                    <span>Reference</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav-tabs">
+            <a href="../Html.html">HTML</a>
+            <a href="../cssfolder/css.html" class="active">CSS</a>
+            <a href="#">JAVASCRIPT</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidenavbar">
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Tutorial ▼</button>
+                <div class="dropdown-content">
+                    <a href="../cssfolder/css.html">CSS Introduction</a>
+                    <a href="../cssfolder/cssSyntax.html">CSS Syntax</a>
+                    <a href="../cssfolder/addcss.html">How to Add CSS</a>
+                    <a href="../cssfolder/csscomments.html">CSS Comments</a>
+                    <a href="../cssfolder/Error.html">CSS Errors</a>
+                    <a href="../cssfolder/csscolors.html">CSS Colors</a>
+                    <a href="../cssfolder/RGB.html">RGB</a>
+                    <a href="../cssfolder/HEX.html">HEX</a>
+                    <a href="../cssfolder/HSL.html">HSL</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Backgrounds ▼</button>
+                <div class="dropdown-content">
+                    <a href="Backgroundcolor.html">Background Color</a>
+                    <a href="Backgroundimage.html" class="active">Background Image</a>
+                    <a href="Backgroundrepeat.html">Background Repeat</a>
+                    <a href="Backgroundattachment.html">Background Attachment</a>
+                    <a href="Backgroundshorthand.html">Background Shorthand</a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Borders ▼</button>
+            <div class="dropdown-content">
+                <a href="#" class="active">Borders</a>
+                <a href="#">Border Width</a>
+                <a href="#">Border Color</a>
+                <a href="#">Border Sides</a>
+                <a href="#">Border Shorthand</a>
+                <a href="#">Rounded Borders</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Margins ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Margins</a>
+                <a href="#">Margin Collapse</a>
+                <a href="#">Margin Auto</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Outline ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Outline</a>
+                <a href="#">Outline Width</a>
+                <a href="#">Outline Color</a>
+                <a href="#">Outline Shorthand</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Text ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Text Color</a>
+                <a href="#">Text Alignment</a>
+                <a href="#">Text Decoration</a>
+                <a href="#">Text Transformation</a>
+                <a href="#">Text Spacing</a>
+                <a href="#">Text Shadow</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Fonts ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Font Family</a>
+                <a href="#">Font Style</a>
+                <a href="#">Font Size</a>
+                <a href="#">Font Weight</a>
+                <a href="#">Font Variant</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Icons ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Icons</a>
+                <a href="#">Font Awesome Icons</a>
+                <a href="#">Bootstrap Icons</a>
+                <a href="#">Google Icons</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Links ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Links</a>
+                <a href="#">Link Colors</a>
+                <a href="#">Link Buttons</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Lists ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Lists</a>
+                <a href="#">List Markers</a>
+                <a href="#">List Shorthand</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Tables ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Tables</a>
+                <a href="#">Table Borders</a>
+                <a href="#">Table Size</a>
+                <a href="#">Table Alignment</a>
+                <a href="#">Table Style</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Display ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Display</a>
+                <a href="#">Max-width</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Max-width ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Max-width</a>
+            </div>
+        </div>
+    </div>
+        
+        <div class="main-content">
+            <h1>CSS Background Image</h1>
+            <p>The <code>background-image</code> property specifies an image to use as the background of an element.</p>
+            
+            <h2>Syntax:</h2>
+            <div class="code-example">
+                <code>background-image: url('path/to/image.jpg');</code>
+            </div>
+            
+            <h2>Background Image Examples:</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <div class="bg-example bg-image-1">
+                    <p>Pattern 1</p>
+                </div>
+                <div class="bg-example bg-image-2">
+                    <p>Pattern 2</p>
+                </div>
+                <div class="bg-example bg-image-3">
+                    <p>Pattern 3</p>
+                </div>
+                <div class="bg-example bg-image-4">
+                    <p>Pattern 4</p>
+                </div>
+                <div class="bg-example bg-image-5">
+                    <p>Pattern 5</p>
+                </div>
+                <div class="bg-example bg-image-6">
+                    <p>Pattern 6</p>
+                </div>
+            </div>
+            
+            <h2>Common Values:</h2>
+            <ul>
+                <li><strong>url('image.jpg'):</strong> Path to the image file</li>
+                <li><strong>none:</strong> No background image (default)</li>
+                <li><strong>linear-gradient():</strong> CSS gradient as background</li>
+                <li><strong>radial-gradient():</strong> Radial CSS gradient</li>
+            </ul>
+            
+            <h2>Example Code:</h2>
+            <div class="code-example">
+                <pre><code>/* Using an image file */
+body {
+    background-image: url('background.jpg');
+}
+
+/* Using a gradient */
+div {
+    background-image: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+}
+
+/* Multiple background images */
+.container {
+    background-image: 
+        url('pattern1.png'),
+        url('pattern2.png');
+}</code></pre>
+            </div>
+
+            <div class="button-container">
+                <button class="left" onclick="window.location.href='Backgroundcolor.html'">❮ Previous</button>
+                <button class="right" onclick="window.location.href='Backgroundrepeat.html'">Next ❯</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown(button) {
+            const dropdown = button.parentElement;
+            const dropdownContent = dropdown.querySelector('.dropdown-content');
+            const isActive = dropdown.classList.contains('active');
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown.active').forEach(activeDropdown => {
+                if (activeDropdown !== dropdown) {
+                    activeDropdown.classList.remove('active');
+                }
+            });
+            
+            // Toggle current dropdown
+            dropdown.classList.toggle('active');
+            
+            // Update arrow direction
+            if (dropdown.classList.contains('active')) {
+                button.innerHTML = button.innerHTML.replace('▼', '▲');
+            } else {
+                button.innerHTML = button.innerHTML.replace('▲', '▼');
+            }
+        }
+    </script>
+</body>
+</html>

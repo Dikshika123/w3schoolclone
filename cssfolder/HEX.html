@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEX colors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../Html.css">
+    <style>
+        .hex-container {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .hex-box {
+            height: 150px;
+            width: 200px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            border: 2px solid #333;
+        }
+        
+        .hex-box p {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+        }
+        
+        .red-hex {
+            background-color: #FF0000;
+        }
+        
+        .blue-hex {
+            background-color: #0000FF;
+        }
+        
+        .green-hex {
+            background-color: #00FF00;
+        }
+        
+        .purple-hex {
+            background-color: #800080;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+            <div class="nav-brand">
+                <a href="../Html.html" class="logo">
+                    <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <div class="nav-item">
+                    <span>Tutorials</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="nav-item">
+                    <span>References</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="nav-item">
+                    <span>Exercises</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="nav-item">
+                    <span>Certificates</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search ..." class="search-input">
+                    <button class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+       </nav>
+       <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorials-container" id="menu">
+                <a href="../Html.html" class="tutorial-item">HTML</a>
+            <a href="css.html" class="tutorial-item">CSS</a>
+            <a href="#" class="tutorial-item">JAVASCRIPT</a>
+            <a href="#" class="tutorial-item">SQL</a>
+            <a href="#" class="tutorial-item">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="#" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+
+    </nav>
+     <div class="container">
+        <div class="sidenavbar">
+            <h2>CSS Tutorial</h2>
+            <a href="css.html">CSS HOME</a>
+            <a href="cssIntro.html" class="active">CSS Introduction</a>
+            <a href="cssSyntax.html">CSS Syntax</a>
+            <a href="../Selectors.html">Selectors</a>
+            <a href="addcss.html">How to Add CSS</a>
+            <a href="csscomments.html">Comments</a>
+            <a href="Error.html">Errors</a>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Colors ▼</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="csscolors.html">Colors</a>
+                    <a href="#">RGB</a>
+                    <a href="#">HEX</a>
+                    <a href="#">HSL</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">Css Background ▼</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="../background/Backgroundcolor.html">Background Color</a>
+                    <a href="../background/Backgroundimage.html">Background Image</a>
+                    <a href="../background/Backgroundrepeat.html">Background Repeat</a>
+                    <a href="../background/Backgroundattachment.html">Background Attachment</a>
+                    <a href="../background/Backgroundshorthand.html">Background Shorthand</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Borders ▼</button>
+                <div class="dropdown-content">
+                    <a href="#" class="active">Borders</a>
+                    <a href="#">Border Width</a>
+                    <a href="#">Border Color</a>
+                    <a href="#">Border Sides</a>
+                    <a href="#">Border Shorthand</a>
+                    <a href="#">Rounded Borders</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Margins ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Margins</a>
+                    <a href="#">Margin Collapse</a>
+                    <a href="#">Margin Auto</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Outline ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Outline</a>
+                    <a href="#">Outline Width</a>
+                    <a href="#">Outline Color</a>
+                    <a href="#">Outline Shorthand</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Text ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Text Color</a>
+                    <a href="#">Text Alignment</a>
+                    <a href="#">Text Decoration</a>
+                    <a href="#">Text Transformation</a>
+                    <a href="#">Text Spacing</a>
+                    <a href="#">Text Shadow</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Fonts ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Font Family</a>
+                    <a href="#">Font Style</a>
+                    <a href="#">Font Size</a>
+                    <a href="#">Font Weight</a>
+                    <a href="#">Font Variant</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Icons ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Icons</a>
+                    <a href="#">Font Awesome Icons</a>
+                    <a href="#">Bootstrap Icons</a>
+                    <a href="#">Google Icons</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Links ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Links</a>
+                    <a href="#">Link Colors</a>
+                    <a href="#">Link Buttons</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Lists ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Lists</a>
+                    <a href="#">List Markers</a>
+                    <a href="#">List Shorthand</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Tables ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Tables</a>
+                    <a href="#">Table Borders</a>
+                    <a href="#">Table Size</a>
+                    <a href="#">Table Alignment</a>
+                    <a href="#">Table Style</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Display ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Display</a>
+                    <a href="#">Max-width</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Max-width ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Max-width</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <h1>CSS HEX Colors</h1>
+            <p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.</p>
+            <p>HEX values are specified using the format:</p>
+            <h2>#RRGGBB</h2>
+            <p>Where RR, GG, and BB are hexadecimal values between 00 and FF (same as decimal 0-255).</p>
+            
+            <h2>HEX Color Examples:</h2>
+            <div class="hex-container">
+                <div class="hex-box red-hex">
+                    <p>#FF0000</p>
+                </div>
+                <div class="hex-box blue-hex">
+                    <p>#0000FF</p>
+                </div>
+                <div class="hex-box green-hex">
+                    <p>#00FF00</p>
+                </div>
+                <div class="hex-box purple-hex">
+                    <p>#800080</p>
+                </div>
+            </div>
+            
+            <h2>How HEX Works:</h2>
+            <ul>
+                <li><strong>Red:</strong> #FF0000 - Maximum red, no green, no blue</li>
+                <li><strong>Green:</strong> #00FF00 - No red, maximum green, no blue</li>
+                <li><strong>Blue:</strong> #0000FF - No red, no green, maximum blue</li>
+                <li><strong>Black:</strong> #000000 - No red, no green, no blue</li>
+                <li><strong>White:</strong> #FFFFFF - Maximum red, green, and blue</li>
+            </ul>
+
+            <div class="button-container">
+                <button class="left" onclick="window.location.href='csscolors.html'">❮ Previous</button>
+                <button class="right" onclick="window.location.href='HSL.html'">Next ❯</button>
+            </div>
+            
+         </div>   
+</header>
+
+<script>
+    function toggleDropdown(button) {
+        const dropdown = button.parentElement;
+        const dropdownContent = dropdown.querySelector('.dropdown-content');
+        const isActive = dropdown.classList.contains('active');
+        
+        // Close all other dropdowns
+        document.querySelectorAll('.dropdown.active').forEach(activeDropdown => {
+            if (activeDropdown !== dropdown) {
+                activeDropdown.classList.remove('active');
+            }
+        });
+        
+        // Toggle current dropdown
+        dropdown.classList.toggle('active');
+        
+        // Update arrow direction
+        if (dropdown.classList.contains('active')) {
+            button.innerHTML = button.innerHTML.replace('▼', '▲');
+        } else {
+            button.innerHTML = button.innerHTML.replace('▲', '▼');
+        }
+    }
+
+    function scrollLeft() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollLeft -= 200;
+        }
+    }
+
+    function scrollRight() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollLeft += 200;
+        }
+    }
+</script>
+</body>
+</html>

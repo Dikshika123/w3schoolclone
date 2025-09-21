@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders width</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../Html.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+            <div class="nav-brand">
+                <a href="../Html.html" class="logo">
+                    <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <div class="nav-item">
+                    <span>Tutorials</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="nav-item">
+                    <span>References</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="nav-item">
+                    <span>Exercises</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="nav-item">
+                    <span>Certificates</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search ..." class="search-input">
+                    <button class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+       </nav>
+       <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorials-container" id="menu">
+                <a href="../Html.html" class="tutorial-item">HTML</a>
+            <a href="css.html" class="tutorial-item">CSS</a>
+            <a href="#" class="tutorial-item">JAVASCRIPT</a>
+            <a href="#" class="tutorial-item">SQL</a>
+            <a href="#" class="tutorial-item">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="#" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+
+    </nav>
+     <div class="container">
+        <div class="sidenavbar">
+            <h2>CSS Tutorial</h2>
+            <a href="css.html">CSS HOME</a>
+            <a href="cssIntro.html" class="active">CSS Introduction</a>
+            <a href="cssSyntax.html">CSS Syntax</a>
+            <a href="../Selectors.html">Selectors</a>
+            <a href="addcss.html">How to Add CSS</a>
+            <a href="csscomments.html">Comments</a>
+            <a href="Error.html">Errors</a>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Colors ▼</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="csscolors.html">Colors</a>
+                    <a href="RGB.html">RGB</a>
+                    <a href="HEX.html">HEX</a>
+                    <a href="HSL.html">HSL</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">Css Background ▼</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="../background/Backgroundcolor.html">Background Color</a>
+                    <a href="../background/Backgroundimage.html">Background Image</a>
+                    <a href="../background/Backgroundrepeat.html">Background Repeat</a>
+                    <a href="../background/Backgroundattachment.html">Background Attachment</a>
+                    <a href="../background/Backgroundshorthand.html">Background Shorthand</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Borders ▼</button>
+                <div class="dropdown-content">
+                    <a href="Bordercss.html" class="active">Borders</a>
+                    <a href="Borderswith.html">Border Width</a>
+                    <a href="#">Border Color</a>
+                    <a href="#">Border Sides</a>
+                    <a href="#">Border Shorthand</a>
+                    <a href="#">Rounded Borders</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Margins ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Margins</a>
+                    <a href="#">Margin Collapse</a>
+                    <a href="#">Margin Auto</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Outline ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Outline</a>
+                    <a href="#">Outline Width</a>
+                    <a href="#">Outline Color</a>
+                    <a href="#">Outline Shorthand</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Text ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Text Color</a>
+                    <a href="#">Text Alignment</a>
+                    <a href="#">Text Decoration</a>
+                    <a href="#">Text Transformation</a>
+                    <a href="#">Text Spacing</a>
+                    <a href="#">Text Shadow</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Fonts ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Font Family</a>
+                    <a href="#">Font Style</a>
+                    <a href="#">Font Size</a>
+                    <a href="#">Font Weight</a>
+                    <a href="#">Font Variant</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Icons ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Icons</a>
+                    <a href="#">Font Awesome Icons</a>
+                    <a href="#">Bootstrap Icons</a>
+                    <a href="#">Google Icons</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Links ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Links</a>
+                    <a href="#">Link Colors</a>
+                    <a href="#">Link Buttons</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Lists ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Lists</a>
+                    <a href="#">List Markers</a>
+                    <a href="#">List Shorthand</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Tables ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Tables</a>
+                    <a href="#">Table Borders</a>
+                    <a href="#">Table Size</a>
+                    <a href="#">Table Alignment</a>
+                    <a href="#">Table Style</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Display ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Display</a>
+                    <a href="#">Max-width</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Max-width ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Max-width</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Border width</h1>
+            <p>Css border width property used to set the width of the border</p>
+            <p>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick:</p>
+            <h1>Example:</h1>
+            <div class="code box">
+                <span>
+                    p.one{
+                        border-style:solid;
+                        border-width:5px;
+                    }
+                </span>
+            </div>
+        </div>
+        <script>
+            
+        </script>
+</body>
+</html>

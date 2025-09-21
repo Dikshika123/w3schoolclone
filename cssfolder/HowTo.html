@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS How To</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../Html.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+            <div class="nav-brand">
+                <a href="../Html.html" class="logo">
+                    <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <div class="nav-item">
+                    <span>Tutorials</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="nav-item">
+                    <span>Reference</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav-tabs">
+            <a href="../Html.html">HTML</a>
+            <a href="css.html" class="active">CSS</a>
+            <a href="#">JAVASCRIPT</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidenavbar">
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Tutorial ▼</button>
+                <div class="dropdown-content">
+                    <a href="css.html">CSS Introduction</a>
+                    <a href="cssSyntax.html">CSS Syntax</a>
+                    <a href="addcss.html">How to Add CSS</a>
+                    <a href="csscomments.html">CSS Comments</a>
+                    <a href="Error.html">CSS Errors</a>
+                    <a href="csscolors.html">CSS Colors</a>
+                    <a href="RGB.html">RGB</a>
+                    <a href="HEX.html">HEX</a>
+                    <a href="HSL.html">HSL</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS Backgrounds ▼</button>
+                <div class="dropdown-content">
+                    <a href="background/Backgroundcolor.html">Background Color</a>
+                    <a href="background/Backgroundimage.html">Background Image</a>
+                    <a href="background/Backgroundrepeat.html">Background Repeat</a>
+                    <a href="background/Backgroundattachment.html">Background Attachment</a>
+                    <a href="background/Backgroundshorthand.html">Background Shorthand</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">CSS How To ▼</button>
+                <div class="dropdown-content">
+                    <a href="HowTo.html" class="active">How To</a>
+                    <a href="#">How To Examples</a>
+                    <a href="#">How To Tutorials</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <h1>CSS How To</h1>
+            <p>This section contains practical examples and tutorials on how to implement various CSS techniques and effects.</p>
+            
+            <h2>Common CSS How-To Examples:</h2>
+            <div class="howto-grid">
+                <div class="howto-card">
+                    <h3>How to Center Elements</h3>
+                    <p>Learn different ways to center elements horizontally and vertically.</p>
+                    <div class="code-example">
+                        <pre><code>/* Center horizontally */
+.center {
+    margin: 0 auto;
+    width: 200px;
+}
+
+/* Center vertically and horizontally */
+.center-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}</code></pre>
+                    </div>
+                </div>
+                
+                <div class="howto-card">
+                    <h3>How to Create Responsive Design</h3>
+                    <p>Make your website work on all devices using media queries.</p>
+                    <div class="code-example">
+                        <pre><code>/* Mobile first approach */
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .container {
+        width: 1200px;
+    }
+}</code></pre>
+                    </div>
+                </div>
+                
+                <div class="howto-card">
+                    <h3>How to Create Animations</h3>
+                    <p>Add smooth animations and transitions to your elements.</p>
+                    <div class="code-example">
+                        <pre><code>/* Hover animation */
+.button {
+    background: #4CAF50;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #45a049;
+}
+
+/* Keyframe animation */
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.slide {
+    animation: slideIn 0.5s ease-out;
+}</code></pre>
+                    </div>
+                </div>
+                
+                <div class="howto-card">
+                    <h3>How to Style Forms</h3>
+                    <p>Create beautiful and functional form elements.</p>
+                    <div class="code-example">
+                        <pre><code>/* Input styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button class="left" onclick="window.location.href='css.html'">❮ Previous</button>
+                <button class="right" onclick="window.location.href='cssSyntax.html'">Next ❯</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown(button) {
+            const dropdown = button.parentElement;
+            const dropdownContent = dropdown.querySelector('.dropdown-content');
+            const isActive = dropdown.classList.contains('active');
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown.active').forEach(activeDropdown => {
+                if (activeDropdown !== dropdown) {
+                    activeDropdown.classList.remove('active');
+                }
+            });
+            
+            // Toggle current dropdown
+            dropdown.classList.toggle('active');
+            
+            // Update arrow direction
+            if (dropdown.classList.contains('active')) {
+                button.innerHTML = button.innerHTML.replace('▼', '▲');
+            } else {
+                button.innerHTML = button.innerHTML.replace('▲', '▼');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* Additional styles for Editors page */
+.main-content {
+    background-color: #f8f8f8;
+    margin-left: 280px;
+    margin-top: 65px;
+    padding: 40px;
+    min-height: calc(100vh - 65px);
+}
+
+.main-content h1 {
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+}
+.sidenavbar{
+    width:280px;
+    background-color:white;
+    padding: 20px 0 0 0;
+    position:fixed;
+    left:0;
+    top:65px;
+    height:calc(100vh - 65px);
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidenavbar h2 {
+    background-color: #04AA6D;
+    color: white;
+    padding: 15px 20px;
+    margin: 0 0 20px 0;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.button-container .left {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container .left:hover {
+    background-color: #059862;
+}
+
+.button-container .right {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container .right:hover {
+    background-color: #059862;
+}
