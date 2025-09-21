@@ -544,7 +544,7 @@ header {
 }
 
 .where-begin {
-    color: white;aie 
+    color: white;
     text-decoration: none;
     font-size: 23px;
     margin-top: 30px;
@@ -559,7 +559,7 @@ header {
 
 /* Cards Container */
 .cards-container {
-    background-color: #282A35;
+    background-color:yellow;
     padding: 40px 20px;
     max-width: 1400px;
     margin: 0 auto;
@@ -574,7 +574,7 @@ header {
 }
 
 .language-card {
-    background-color: white;
+    background-color:yellow;
     border-radius: 8px;
     padding: 30px;
     text-align: center;
@@ -1524,7 +1524,6 @@ header {
 }
 
 .tutorial-section {
-    margin-bottom: 40px;
     padding: 20px;
     background-color: #f8f9fa;
     border-radius: 8px;
