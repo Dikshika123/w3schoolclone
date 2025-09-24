@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Variable Names</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../Html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+        <div class="nav-brand">
+            <a href="../../index.html" class="logo">
+                <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <div class="nav-item">
+                <span>Tutorials</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>References</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Exercises</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Certificates</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search ..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+
+    <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorial-menu" id="menu">
+            <a href="../../Html.html" class="tutorial-item">HTML</a>
+            <a href="../../cssfolder/css.html" class="tutorial-item">CSS</a>
+            <a href="../../cssfolder/Javascript/jstutorial.html" class="tutorial-item">JAVASCRIPT</a>
+            <a href="../../SQL/Sqlhome.html" class="tutorial-item">SQL</a>
+            <a href="../pythonhome.html" class="tutorial-item active">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="#" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+            <a href="#" class="tutorial-item">PANDAS</a>
+            <a href="#" class="tutorial-item">Node js</a>
+            <a href="#" class="tutorial-item">DSA</a>
+            <a href="#" class="tutorial-item">TYPESCRIPT</a>
+            <a href="#" class="tutorial-item">ANGULAR</a>
+            <a href="#" class="tutorial-item">ANGULAR JS</a>
+            <a href="#" class="tutorial-item">GIT</a>
+            <a href="#" class="tutorial-item">POSTGRESQL</a>
+            <a href="#" class="tutorial-item">MONGODB</a>
+            <a href="#" class="tutorial-item">ASP</a>
+            <a href="#" class="tutorial-item">AI</a>
+            <a href="#" class="tutorial-item">R</a>
+            <a href="#" class="tutorial-item">GO</a>
+            <a href="#" class="tutorial-item">KOTLIN</a>
+            <a href="#" class="tutorial-item">SAAS</a>
+            <a href="#" class="tutorial-item">VUE</a>
+            <a href="#" class="tutorial-item">GEN AI</a>
+            <a href="#" class="tutorial-item">SCIPY</a>
+            <a href="#" class="tutorial-item">CYBER SECURITY</a>
+            <a href="#" class="tutorial-item">DATA SCIENCE</a>
+            <a href="#" class="tutorial-item">INTRO TO PROGRAMMING</a>
+            <a href="#" class="tutorial-item">Rush</a>
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+    </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidenavbar">
+            <h2>Python Variables</h2>
+            <a href="pythonvariable.html">Python Variables</a>
+            <a href="variablesname.html" class="active">Variable Names</a>
+            <a href="assignmultiplevalue.html">Assign Multiple Values</a>
+            <a href="outputvariable.html">Output Variables</a>
+            <a href="globalvariable.html">Global Variables</a>
+        </div>
+        
+        <div class="main-content">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > 
+                <a href="../pythonhome.html">Python Tutorial</a> > 
+                <a href="#">Python Variables</a> > 
+                <span>Variable Names</span>
+            </div>
+            <h1>Python Variable Names</h1>
+            <h2>Variable Names</h2>
+            <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).</p>
+            <p>Rules for Python variables:</p>
+            <ul>
+                <li>A variable name must start with a letter or the underscore character</li>
+                <li>A variable name cannot start with a number</li>
+                <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+                <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+            </ul>
+            
+            <h2>Legal variable names:</h2>
+            <div class="code-example">
+                <pre><code>myvar = <span class="code-string">"John"</span>
+my_var = <span class="code-string">"John"</span>
+_my_var = <span class="code-string">"John"</span>
+myVar = <span class="code-string">"John"</span>
+MYVAR = <span class="code-string">"John"</span>
+myvar2 = <span class="code-string">"John"</span></code></pre>
+            </div>
+            
+            <h2>Illegal variable names:</h2>
+            <div class="code-example">
+                <pre><code><span class="code-comment">#2myvar = "John"</span>
+<span class="code-comment">#my-var = "John"</span>
+<span class="code-comment">#my var = "John"</span>
+<span class="code-comment">#my.var = "John"</span></code></pre>
+            </div>
+            
+            <h2>Multi Words Variable Names</h2>
+            <p>Variable names with more than one word can be difficult to read.</p>
+            <p>There are several techniques you can use to make them more readable:</p>
+            
+            <h3>Camel Case</h3>
+            <p>Each word, except the first, starts with a capital letter:</p>
+            <div class="code-example">
+                <pre><code>myVariableName = <span class="code-string">"John"</span></code></pre>
+            </div>
+            
+            <h3>Pascal Case</h3>
+            <p>Each word starts with a capital letter:</p>
+            <div class="code-example">
+                <pre><code>MyVariableName = <span class="code-string">"John"</span></code></pre>
+            </div>
+            
+            <h3>Snake Case</h3>
+            <p>Each word is separated by an underscore character:</p>
+            <div class="code-example">
+                <pre><code>my_variable_name = <span class="code-string">"John"</span></code></pre>
+            </div>
+            
+            <div class="button-container">
+                <button class="left" onclick="window.location.href='pythonvariable.html'">Previous</button>
+                <button class="right" onclick="window.location.href='assignmultiplevalue.html'">Next</button>
+            </div>
+        </div>
+        
+        <div class="right-blank">
+            
+        </div>
+        
+    </div>
+    
+
+<script>
+    
+    function scrollLeft() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    }
+
+    function scrollRight() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    }
+
+    // Enhanced scroll functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.getElementById('menu');
+        const btnLeft = document.querySelector('.scroll-left');
+        const btnRight = document.querySelector('.scroll-right');
+
+        if (!menu || !btnLeft || !btnRight) {
+            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
+            return;
+        }
+
+        const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
+
+        function updateButtons() {
+            const atStart = menu.scrollLeft <= 0;
+            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
+            btnLeft.disabled = atStart;
+            btnRight.disabled = atEnd;
+        }
+
+        btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+
+        btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+
+        menu.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+    });
+</script>
+
+</body>
+</html>

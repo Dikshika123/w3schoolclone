@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Iterators - W3School Clone</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python Iterators</h1>
+        <p>An iterator is an object that contains a countable number of values and can be iterated upon.</p>
+        
+        <h2>What is an Iterator?</h2>
+        <p>An iterator is an object that implements the iterator protocol, which consists of the methods <code>__iter__()</code> and <code>__next__()</code>.</p>
+        
+        <h2>Iterator vs Iterable</h2>
+        <ul>
+            <li><strong>Iterable:</strong> An object that can return an iterator (lists, tuples, strings, etc.)</li>
+            <li><strong>Iterator:</strong> An object that implements the iterator protocol</li>
+        </ul>
+        
+        <h2>Creating an Iterator</h2>
+        <div class="code-block">
+            <pre><code>class MyNumbers:
+    def __init__(self):
+        self.a = 1
+        self.b = 1
+    
+    def __iter__(self):
+        return self
+    
+    def __next__(self):
+        if self.a <= 20:
+            x = self.a
+            self.a += 1
+            return x
+        else:
+            raise StopIteration
+
+myclass = MyNumbers()
+myiter = iter(myclass)
+
+for x in myiter:
+    print(x)</code></pre>
+        </div>
+        
+        <h2>Using Built-in Iterators</h2>
+        <div class="code-block">
+            <pre><code># List iterator
+mylist = [1, 2, 3, 4, 5]
+myiter = iter(mylist)
+
+print(next(myiter))  # 1
+print(next(myiter))  # 2
+print(next(myiter))  # 3</code></pre>
+        </div>
+        
+        <h2>String Iterator</h2>
+        <div class="code-block">
+            <pre><code>mystr = "Hello"
+myiter = iter(mystr)
+
+for x in myiter:
+    print(x)  # H, e, l, l, o</code></pre>
+        </div>
+        
+        <h2>Tuple Iterator</h2>
+        <div class="code-block">
+            <pre><code>mytuple = ("apple", "banana", "cherry")
+myiter = iter(mytuple)
+
+for x in myiter:
+    print(x)</code></pre>
+        </div>
+        
+        <h2>Creating a Custom Iterator</h2>
+        <div class="code-block">
+            <pre><code>class Counter:
+    def __init__(self, low, high):
+        self.current = low
+        self.high = high
+    
+    def __iter__(self):
+        return self
+    
+    def __next__(self):
+        if self.current < self.high:
+            num = self.current
+            self.current += 1
+            return num
+        raise StopIteration
+
+for x in Counter(1, 6):
+    print(x)  # 1, 2, 3, 4, 5</code></pre>
+        </div>
+        
+        <h2>StopIteration Exception</h2>
+        <p>The <code>StopIteration</code> exception is raised when the iterator has no more values to return. This is handled automatically by the <code>for</code> loop.</p>
+    </div>
+</body>
+</html>

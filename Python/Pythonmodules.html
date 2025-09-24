@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Modules - W3School Clone</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python Modules</h1>
+        <p>A module is a file containing Python definitions and statements. It allows you to organize your code into reusable components.</p>
+        
+        <h2>What is a Module?</h2>
+        <p>A module is simply a Python file with a .py extension that contains Python code. You can import and use functions, classes, and variables from modules.</p>
+        
+        <h2>Creating a Module</h2>
+        <div class="code-block">
+            <pre><code># Save as mymodule.py
+def greeting(name):
+    return f"Hello, {name}!"
+
+def add_numbers(a, b):
+    return a + b
+
+person = {
+    "name": "John",
+    "age": 30,
+    "country": "Norway"
+}</code></pre>
+        </div>
+        
+        <h2>Importing a Module</h2>
+        <div class="code-block">
+            <pre><code># Import the entire module
+import mymodule
+
+print(mymodule.greeting("Alice"))
+print(mymodule.add_numbers(5, 3))
+print(mymodule.person["name"])</code></pre>
+        </div>
+        
+        <h2>Import Specific Functions</h2>
+        <div class="code-block">
+            <pre><code># Import specific functions
+from mymodule import greeting, add_numbers
+
+print(greeting("Bob"))
+print(add_numbers(10, 20))</code></pre>
+        </div>
+        
+        <h2>Import with Alias</h2>
+        <div class="code-block">
+            <pre><code># Import with an alias
+import mymodule as mm
+
+print(mm.greeting("Charlie"))
+print(mm.add_numbers(15, 25))</code></pre>
+        </div>
+        
+        <h2>Import All Functions</h2>
+        <div class="code-block">
+            <pre><code># Import all functions (not recommended)
+from mymodule import *
+
+print(greeting("David"))
+print(add_numbers(30, 40))</code></pre>
+        </div>
+        
+        <h2>Built-in Modules</h2>
+        <div class="code-block">
+            <pre><code># Import built-in modules
+import datetime
+import math
+import random
+
+# Use datetime module
+x = datetime.datetime.now()
+print(x)
+
+# Use math module
+print(math.sqrt(16))  # 4.0
+print(math.pi)        # 3.141592653589793
+
+# Use random module
+print(random.randint(1, 10))  # Random number between 1 and 10</code></pre>
+        </div>
+        
+        <h2>Module Search Path</h2>
+        <div class="code-block">
+            <pre><code>import sys
+print(sys.path)  # Shows where Python looks for modules</code></pre>
+        </div>
+        
+        <h2>Creating a Package</h2>
+        <p>A package is a directory containing multiple modules. To create a package:</p>
+        <ol>
+            <li>Create a directory</li>
+            <li>Add an <code>__init__.py</code> file (can be empty)</li>
+            <li>Add your module files</li>
+        </ol>
+        
+        <h2>Package Structure</h2>
+        <div class="code-block">
+            <pre><code>mypackage/
+    __init__.py
+    module1.py
+    module2.py
+    subpackage/
+        __init__.py
+        module3.py</code></pre>
+        </div>
+        
+        <h2>Importing from Packages</h2>
+        <div class="code-block">
+            <pre><code># Import from package
+from mypackage import module1
+from mypackage.module2 import some_function
+
+# Import from subpackage
+from mypackage.subpackage import module3</code></pre>
+        </div>
+        
+        <h2>__name__ Variable</h2>
+        <div class="code-block">
+            <pre><code># In mymodule.py
+def greeting(name):
+    return f"Hello, {name}!"
+
+if __name__ == "__main__":
+    print("This runs only when the module is executed directly")
+    print("Not when imported")</code></pre>
+        </div>
+        
+        <h2>Reloading a Module</h2>
+        <div class="code-block">
+            <pre><code>import importlib
+import mymodule
+
+# Reload the module
+importlib.reload(mymodule)</code></pre>
+        </div>
+    </div>
+</body>
+</html>

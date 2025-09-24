@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python User Input - W3School Clone</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python User Input</h1>
+        <p>Python allows you to get user input using the <code>input()</code> function.</p>
+        
+        <h2>Basic Input</h2>
+        <div class="code-block">
+            <pre><code># Get user input
+name = input("Enter your name: ")
+print(f"Hello, {name}!")</code></pre>
+        </div>
+        
+        <h2>Input with Different Data Types</h2>
+        <div class="code-block">
+            <pre><code># String input
+name = input("Enter your name: ")
+
+# Integer input
+age = int(input("Enter your age: "))
+
+# Float input
+height = float(input("Enter your height: "))
+
+print(f"Name: {name}, Age: {age}, Height: {height}")</code></pre>
+        </div>
+        
+        <h2>Input Validation</h2>
+        <div class="code-block">
+            <pre><code># Validate integer input
+while True:
+    try:
+        age = int(input("Enter your age: "))
+        break
+    except ValueError:
+        print("Please enter a valid number!")
+
+print(f"Your age is: {age}")</code></pre>
+        </div>
+        
+        <h2>Multiple Inputs</h2>
+        <div class="code-block">
+            <pre><code># Get multiple inputs
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+city = input("Enter your city: ")
+
+print(f"Hello {name}, you are {age} years old and live in {city}")</code></pre>
+        </div>
+        
+        <h2>Input with Default Values</h2>
+        <div class="code-block">
+            <pre><code># Input with default value
+name = input("Enter your name (or press Enter for 'Guest'): ")
+if not name:
+    name = "Guest"
+
+print(f"Hello, {name}!")</code></pre>
+        </div>
+        
+        <h2>Password Input</h2>
+        <div class="code-block">
+            <pre><code>import getpass
+
+# Hidden password input
+password = getpass.getpass("Enter your password: ")
+print("Password entered successfully!")</code></pre>
+        </div>
+        
+        <h2>Menu Selection</h2>
+        <div class="code-block">
+            <pre><code># Menu with user input
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
+
+choice = input("Enter your choice (1-4): ")
+
+if choice == "1":
+    print("You selected Add")
+elif choice == "2":
+    print("You selected Subtract")
+elif choice == "3":
+    print("You selected Multiply")
+elif choice == "4":
+    print("You selected Divide")
+else:
+    print("Invalid choice!")</code></pre>
+        </div>
+        
+        <h2>Input in Loops</h2>
+        <div class="code-block">
+            <pre><code># Get input in a loop
+numbers = []
+for i in range(3):
+    num = int(input(f"Enter number {i+1}: "))
+    numbers.append(num)
+
+print(f"Numbers entered: {numbers}")
+print(f"Sum: {sum(numbers)}")</code></pre>
+        </div>
+        
+        <h2>File Input</h2>
+        <div class="code-block">
+            <pre><code># Read from file
+filename = input("Enter filename: ")
+try:
+    with open(filename, 'r') as file:
+        content = file.read()
+        print(content)
+except FileNotFoundError:
+    print("File not found!")</code></pre>
+        </div>
+        
+        <h2>Input with Confirmation</h2>
+        <div class="code-block">
+            <pre><code># Input with confirmation
+while True:
+    name = input("Enter your name: ")
+    confirm = input(f"Is '{name}' correct? (y/n): ")
+    
+    if confirm.lower() == 'y':
+        break
+    elif confirm.lower() == 'n':
+        continue
+    else:
+        print("Please enter 'y' or 'n'")
+
+print(f"Confirmed name: {name}")</code></pre>
+        </div>
+    </div>
+</body>
+</html>

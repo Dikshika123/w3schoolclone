@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python String Formatting - W3School Clone</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python String Formatting</h1>
+        <p>String formatting allows you to format strings in various ways to make them more readable and dynamic.</p>
+        
+        <h2>String format() Method</h2>
+        <div class="code-block">
+            <pre><code># Basic formatting
+age = 25
+name = "John"
+text = "My name is {} and I am {} years old"
+print(text.format(name, age))  # My name is John and I am 25 years old</code></pre>
+        </div>
+        
+        <h2>Indexed Formatting</h2>
+        <div class="code-block">
+            <pre><code># Using index numbers
+text = "My name is {0} and I am {1} years old. {0} is a great name!"
+print(text.format("John", 25))
+# My name is John and I am 25 years old. John is a great name!</code></pre>
+        </div>
+        
+        <h2>Named Formatting</h2>
+        <div class="code-block">
+            <pre><code># Using named placeholders
+text = "My name is {name} and I am {age} years old"
+print(text.format(name="John", age=25))
+# My name is John and I am 25 years old</code></pre>
+        </div>
+        
+        <h2>f-strings (Formatted String Literals)</h2>
+        <div class="code-block">
+            <pre><code># f-strings (Python 3.6+)
+name = "John"
+age = 25
+text = f"My name is {name} and I am {age} years old"
+print(text)  # My name is John and I am 25 years old</code></pre>
+        </div>
+        
+        <h2>f-strings with Expressions</h2>
+        <div class="code-block">
+            <pre><code># f-strings with expressions
+price = 19.99
+quantity = 3
+total = f"Total: ${price * quantity:.2f}"
+print(total)  # Total: $59.97</code></pre>
+        </div>
+        
+        <h2>Number Formatting</h2>
+        <div class="code-block">
+            <pre><code># Number formatting
+number = 3.14159
+
+# Decimal places
+print(f"{number:.2f}")    # 3.14
+print(f"{number:.4f}")    # 3.1416
+
+# Width and alignment
+print(f"{number:10.2f}")  #       3.14
+print(f"{number:<10.2f}") # 3.14      
+print(f"{number:>10.2f}") #       3.14
+print(f"{number:^10.2f}") #   3.14   </code></pre>
+        </div>
+        
+        <h2>String Formatting with %</h2>
+        <div class="code-block">
+            <pre><code># Old style formatting with %
+name = "John"
+age = 25
+print("My name is %s and I am %d years old" % (name, age))
+# My name is John and I am 25 years old
+
+# Different format specifiers
+print("Price: $%.2f" % 19.99)      # Price: $19.99
+print("Percentage: %.1f%%" % 85.5)  # Percentage: 85.5%</code></pre>
+        </div>
+        
+        <h2>Format Specifiers</h2>
+        <table>
+            <tr>
+                <th>Specifier</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>s</td>
+                <td>String</td>
+                <td>%s</td>
+            </tr>
+            <tr>
+                <td>d</td>
+                <td>Integer</td>
+                <td>%d</td>
+            </tr>
+            <tr>
+                <td>f</td>
+                <td>Float</td>
+                <td>%f</td>
+            </tr>
+            <tr>
+                <td>e</td>
+                <td>Scientific notation</td>
+                <td>%e</td>
+            </tr>
+            <tr>
+                <td>g</td>
+                <td>General format</td>
+                <td>%g</td>
+            </tr>
+        </table>
+        
+        <h2>Alignment and Padding</h2>
+        <div class="code-block">
+            <pre><code># Alignment
+text = "Hello"
+print(f"{text:<10}")  # Hello     
+print(f"{text:>10}")  #      Hello
+print(f"{text:^10}")  #   Hello   
+
+# Padding with characters
+print(f"{text:*<10}")  # Hello*****
+print(f"{text:*>10}")  # *****Hello
+print(f"{text:*^10}")  # **Hello***</code></pre>
+        </div>
+        
+        <h2>Date and Time Formatting</h2>
+        <div class="code-block">
+            <pre><code>from datetime import datetime
+
+now = datetime.now()
+print(f"Current date: {now:%Y-%m-%d}")        # 2023-12-07
+print(f"Current time: {now:%H:%M:%S}")        # 14:30:25
+print(f"Full datetime: {now:%Y-%m-%d %H:%M:%S}")  # 2023-12-07 14:30:25</code></pre>
+        </div>
+        
+        <h2>Template Strings</h2>
+        <div class="code-block">
+            <pre><code>from string import Template
+
+# Template strings
+template = Template("Hello $name, you have $count messages")
+result = template.substitute(name="John", count=5)
+print(result)  # Hello John, you have 5 messages</code></pre>
+        </div>
+        
+        <h2>String Methods for Formatting</h2>
+        <div class="code-block">
+            <pre><code>text = "hello world"
+
+# Case methods
+print(text.upper())      # HELLO WORLD
+print(text.lower())      # hello world
+print(text.title())      # Hello World
+print(text.capitalize()) # Hello world
+
+# Alignment methods
+print(text.ljust(20))    # hello world         
+print(text.rjust(20))    #          hello world
+print(text.center(20))   #     hello world     </code></pre>
+        </div>
+    </div>
+</body>
+</html>

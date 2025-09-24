@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python List Comprehension</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../Html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+        <div class="nav-brand">
+            <a href="../../index.html" class="logo">
+                <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <div class="nav-item">
+                <span>Tutorials</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>References</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Exercises</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Certificates</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search ..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+
+    <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorial-menu" id="menu">
+            <a href="../../Html.html" class="tutorial-item">HTML</a>
+            <a href="../../cssfolder/css.html" class="tutorial-item">CSS</a>
+            <a href="../../cssfolder/Javascript/jstutorial.html" class="tutorial-item">JAVASCRIPT</a>
+            <a href="../../SQL/Sqlhome.html" class="tutorial-item">SQL</a>
+            <a href="../pythonhome.html" class="tutorial-item active">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="#" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+            <a href="#" class="tutorial-item">PANDAS</a>
+            <a href="#" class="tutorial-item">Node js</a>
+            <a href="#" class="tutorial-item">DSA</a>
+            <a href="#" class="tutorial-item">TYPESCRIPT</a>
+            <a href="#" class="tutorial-item">ANGULAR</a>
+            <a href="#" class="tutorial-item">ANGULAR JS</a>
+            <a href="#" class="tutorial-item">GIT</a>
+            <a href="#" class="tutorial-item">POSTGRESQL</a>
+            <a href="#" class="tutorial-item">MONGODB</a>
+            <a href="#" class="tutorial-item">ASP</a>
+            <a href="#" class="tutorial-item">AI</a>
+            <a href="#" class="tutorial-item">R</a>
+            <a href="#" class="tutorial-item">GO</a>
+            <a href="#" class="tutorial-item">KOTLIN</a>
+            <a href="#" class="tutorial-item">SAAS</a>
+            <a href="#" class="tutorial-item">VUE</a>
+            <a href="#" class="tutorial-item">GEN AI</a>
+            <a href="#" class="tutorial-item">SCIPY</a>
+            <a href="#" class="tutorial-item">CYBER SECURITY</a>
+            <a href="#" class="tutorial-item">DATA SCIENCE</a>
+            <a href="#" class="tutorial-item">INTRO TO PROGRAMMING</a>
+            <a href="#" class="tutorial-item">Rush</a>
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+    </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidenavbar">
+            <h2>Python Tutorial</h2>
+            <a href="pythonhome.html">Python Home</a>
+            <a href="pythonintro.html" class="active">Python Intro</a>
+            <a href="pythoninstall.html">Python Install</a>
+            <a href="pythonsyntax.html">Python Syntax</a>
+            <a href="pythonvariables.html">Python Variables</a>
+            <a href="pythoncomments.html">Python Comments</a>
+            <a href="pythonstrings.html">Python Strings</a>
+            <a href="pythonnumbers.html">Python Numbers</a>
+            <a href="pythoncasting.html">Python Casting</a>
+            <a href="pythonbooleans.html">Python Booleans</a>
+            <a href="pythonoperators.html">Python Operators</a>
+            <a href="pythonlists.html">Python Lists</a>
+            <a href="pythontuples.html">Python Tuples</a>
+            <a href="pythonsets.html">Python Sets</a>
+            <a href="pythondictionaries.html">Python Dictionaries</a>
+            <a href="pythonifelse.html">Python If...Else</a>
+            <a href="pythonwhile.html">Python While Loops</a>
+            <a href="pythonfor.html">Python For Loops</a>
+            <a href="pythonfunctions.html">Python Functions</a>
+            <a href="pythonlambda.html">Python Lambda</a>
+            <a href="pythonarrays.html">Python Arrays</a>
+            <a href="pythonclasses.html">Python Classes</a>
+            <a href="pythoninheritance.html">Python Inheritance</a>
+            <a href="pythonmodules.html">Python Modules</a>
+            <a href="pythondatetime.html">Python Datetime</a>
+            <a href="pythonjson.html">Python JSON</a>
+            <a href="pythonregex.html">Python RegEx</a>
+            <a href="pythonpip.html">Python PIP</a>
+            <a href="pythontry.html">Python Try...Except</a>
+            <a href="pythonuserinput.html">Python User Input</a>
+            <a href="pythonstringformatting.html">Python String Formatting</a>
+            <a href="pythonfilehandling.html">Python File Handling</a>
+            <a href="pythonreadfiles.html">Python Read Files</a>
+            <a href="pythonwritefiles.html">Python Write/Create Files</a>
+            <a href="pythondeletefiles.html">Python Delete Files</a>
+            <a href="pythonmath.html">Python Math</a>
+            <a href="pythoncmath.html">Python cMath</a>
+            <a href="pythonrandom.html">Python Random</a>
+            <a href="pythonbuiltinfunctions.html">Python Built-in Functions</a>
+            <a href="pythonbuiltinmodules.html">Python Built-in Modules</a>
+            <a href="pythonbuiltinexceptions.html">Python Built-in Exceptions</a>
+            <a href="pythonos.html">Python OS</a>
+            <a href="pythonrequests.html">Python Requests</a>
+            <a href="pythonmysql.html">Python MySQL</a>
+            <a href="pythonmongodb.html">Python MongoDB</a>
+            <a href="pythonreference.html">Python Reference</a>
+            <a href="pythonkeywords.html">Python Keywords</a>
+            <a href="pythonquiz.html">Python Quiz</a>
+            <a href="pythonexercises.html">Python Exercises</a>
+            <a href="pythoncertificate.html">Python Certificate</a>
+        </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > 
+                <a href="../pythonhome.html">Python Tutorial</a> > 
+                <a href="#">Python Lists</a> > 
+                <span>List Comprehension</span>
+            </div>
+            <h1>Python List Comprehension</h1>
+            <h2>List Comprehension</h2>
+            <p>List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.</p>
+            <p>Example:</p>
+            <p>Based on a list of fruits, you want a new list, containing only the fruits with the letter "a" in the name.</p>
+            <p>Without list comprehension you will have to write a for statement with a conditional test inside:</p>
+            
+            <div class="code-example">
+                <pre><code>fruits = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>, <span class="code-string">"kiwi"</span>, <span class="code-string">"mango"</span>]
+newlist = []
+
+<span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits:
+    <span class="code-keyword">if</span> <span class="code-string">"a"</span> <span class="code-keyword">in</span> x:
+        newlist.append(x)
+
+<span class="code-keyword">print</span>(newlist)</code></pre>
+            </div>
+            
+            <p>With list comprehension you can do all that with only one line of code:</p>
+            
+            <div class="code-example">
+                <pre><code>fruits = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>, <span class="code-string">"kiwi"</span>, <span class="code-string">"mango"</span>]
+
+newlist = [x <span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits <span class="code-keyword">if</span> <span class="code-string">"a"</span> <span class="code-keyword">in</span> x]
+
+<span class="code-keyword">print</span>(newlist)</code></pre>
+            </div>
+            
+            <h2>The Syntax</h2>
+            <div class="code-example">
+                <pre><code>newlist = [expression <span class="code-keyword">for</span> item <span class="code-keyword">in</span> iterable <span class="code-keyword">if</span> condition == <span class="code-keyword">True</span>]</code></pre>
+            </div>
+            
+            <h2>Condition</h2>
+            <p>The condition is like a filter that only accepts the items that valuate to True.</p>
+            
+            <div class="code-example">
+                <pre><code>newlist = [x <span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits <span class="code-keyword">if</span> x != <span class="code-string">"apple"</span>]</code></pre>
+            </div>
+            
+            <p>The condition if x != "apple" will return True for all elements other than "apple", making the new list contain all fruits except "apple".</p>
+            
+            <h2>Iterable</h2>
+            <p>The iterable can be any iterable object, like a list, tuple, set etc.</p>
+            
+            <div class="code-example">
+                <pre><code>newlist = [x <span class="code-keyword">for</span> x <span class="code-keyword">in</span> <span class="code-keyword">range</span>(<span class="code-number">10</span>)]</code></pre>
+            </div>
+            
+            <h2>Expression</h2>
+            <p>The expression is the current item in the iteration, but it is also the outcome, which you can manipulate before it ends up like a list item in the new list:</p>
+            
+            <div class="code-example">
+                <pre><code>newlist = [x.upper() <span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits]</code></pre>
+            </div>
+            
+            <h2>Set all values in the new list to 'hello':</h2>
+            <div class="code-example">
+                <pre><code>newlist = [<span class="code-string">'hello'</span> <span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits]</code></pre>
+            </div>
+            
+            <h2>Return "orange" instead of "banana":</h2>
+            <div class="code-example">
+                <pre><code>newlist = [x <span class="code-keyword">if</span> x != <span class="code-string">"banana"</span> <span class="code-keyword">else</span> <span class="code-string">"orange"</span> <span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits]</code></pre>
+            </div>
+            
+            <h2>Nested List Comprehension</h2>
+            <p>You can have nested list comprehensions:</p>
+            
+            <div class="code-example">
+                <pre><code>matrix = [[<span class="code-number">1</span>, <span class="code-number">2</span>, <span class="code-number">3</span>], [<span class="code-number">4</span>, <span class="code-number">5</span>, <span class="code-number">6</span>], [<span class="code-number">7</span>, <span class="code-number">8</span>, <span class="code-number">9</span>]]
+flattened = [element <span class="code-keyword">for</span> row <span class="code-keyword">in</span> matrix <span class="code-keyword">for</span> element <span class="code-keyword">in</span> row]
+<span class="code-keyword">print</span>(flattened)</code></pre>
+            </div>
+            
+            <h2>List Comprehension with Multiple Conditions</h2>
+            <p>You can use multiple conditions:</p>
+            
+            <div class="code-example">
+                <pre><code>numbers = [<span class="code-number">1</span>, <span class="code-number">2</span>, <span class="code-number">3</span>, <span class="code-number">4</span>, <span class="code-number">5</span>, <span class="code-number">6</span>, <span class="code-number">7</span>, <span class="code-number">8</span>, <span class="code-number">9</span>, <span class="code-number">10</span>]
+even_squares = [x**<span class="code-number">2</span> <span class="code-keyword">for</span> x <span class="code-keyword">in</span> numbers <span class="code-keyword">if</span> x % <span class="code-number">2</span> == <span class="code-number">0</span> <span class="code-keyword">if</span> x > <span class="code-number">5</span>]
+<span class="code-keyword">print</span>(even_squares)</code></pre>
+            </div>
+            
+            <h2>List Comprehension with Functions</h2>
+            <p>You can use functions in list comprehension:</p>
+            
+            <div class="code-example">
+                <pre><code><span class="code-keyword">def</span> square(x):
+    <span class="code-keyword">return</span> x ** <span class="code-number">2</span>
+
+numbers = [<span class="code-number">1</span>, <span class="code-number">2</span>, <span class="code-number">3</span>, <span class="code-number">4</span>, <span class="code-number">5</span>]
+squares = [square(x) <span class="code-keyword">for</span> x <span class="code-keyword">in</span> numbers]
+<span class="code-keyword">print</span>(squares)</code></pre>
+            </div>
+            
+            <div class="button-container">
+                <button class="left" onclick="window.location.href='looplists.html'">Previous</button>
+                <button class="right" onclick="window.location.href='sortlists.html'">Next</button>
+            </div>
+        </div>
+        
+        <div class="right-blank">
+            
+        </div>
+        
+    </div>
+    
+
+<script>
+    
+    function scrollLeft() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    }
+
+    function scrollRight() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    }
+
+    // Enhanced scroll functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.getElementById('menu');
+        const btnLeft = document.querySelector('.scroll-left');
+        const btnRight = document.querySelector('.scroll-right');
+
+        if (!menu || !btnLeft || !btnRight) {
+            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
+            return;
+        }
+
+        const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
+
+        function updateButtons() {
+            const atStart = menu.scrollLeft <= 0;
+            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
+            btnLeft.disabled = atStart;
+            btnRight.disabled = atEnd;
+        }
+
+        btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+
+        btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+
+        menu.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+    });
+</script>
+
+</body>
+</html>

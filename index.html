@@ -40,10 +40,6 @@
                     </button>
                 </div>
             </div>
-
-            <div class="nav-right">
-                <!-- Right side content -->
-            </div>
         </nav>
 
         <nav class="nav-tutorials">
@@ -52,8 +48,8 @@
                 <a href="Html.html" class="tutorial-item">HTML</a>
                 <a href="./cssfolder/css.html" class="tutorial-item">CSS</a>
                     <a href="./cssfolder/Javascript/jstutorial.html" class="tutorial-item">JAVASCRIPT</a>
-                <a href="./cssfolder/SQL/sqltutorial.html" class="tutorial-item">SQL</a>
-                <a href="#" class="tutorial-item">PYTHON</a>
+                <a href="./SQL/Sqlhome.html" class="tutorial-item">SQL</a>
+                <a href="./Python/pythonhome.html" class="tutorial-item">PYTHON</a>
                 <a href="#" class="tutorial-item">JAVA</a>
                 <a href="#" class="tutorial-item">PHP</a>
                 <a href="cssfolder/HowTo.html" class="tutorial-item">HOW TO</a>
@@ -204,8 +200,8 @@
                 <h1>Python</h1>
                 <p>A popular programming language</p>
                 <div class="button-group">
-                    <a href="#" class="btn learn-btn">Learn Python</a>
-                    <a href="#" class="btn reference-btn">Python Reference</a>
+                    <a href="./Python/pythonhome.html" class="btn learn-btn">Learn Python</a>
+                    <a href="./Python/pythonhome.html" class="btn reference-btn">Python Reference</a>
                     <a href="#" class="btn certified-btn">Get Certified</a>
                 </div>
             </div>
@@ -229,8 +225,8 @@
                 <h1>SQL</h1>
                 <p>A language for accessing databases</p>
                 <div class="button-group">
-                    <a href="./cssfolder/SQL/sqltutorial.html" class="btn learn-btn">Learn SQL</a>
-                    <a href="./cssfolder/SQL/sqltutorial.html" class="btn reference-btn">SQL Reference</a>
+                    <a href="./SQL/Sqlhome.html" class="btn learn-btn">Learn SQL</a>
+                    <a href="./SQL/Sqlhome.html" class="btn reference-btn">SQL Reference</a>
                     <a href="#" class="btn certified-btn">Get Certified</a>
                 </div>
             </div>
@@ -495,8 +491,8 @@
                     <li><a href="#">CSS Tutorial</a></li>
                     <li><a href="#">JavaScript Tutorial</a></li>
                     <li><a href="#">How To Tutorial</a></li>
-                    <li><a href="./cssfolder/SQL/sqltutorial.html">SQL Tutorial</a></li>
-                    <li><a href="#">Python Tutorial</a></li>
+                    <li><a href="./SQL/Sqlhome.html">SQL Tutorial</a></li>
+                    <li><a href="./Python/pythonhome.html">Python Tutorial</a></li>
                     <li><a href="#">W3.CSS Tutorial</a></li>
                     <li><a href="#">Bootstrap Tutorial</a></li>
                     <li><a href="#">PHP Tutorial</a></li>
@@ -512,8 +508,8 @@
                     <li><a href="#">HTML Reference</a></li>
                     <li><a href="#">CSS Reference</a></li>
                     <li><a href="#">JavaScript Reference</a></li>
-                    <li><a href="./cssfolder/SQL/sqltutorial.html">SQL Reference</a></li>
-                    <li><a href="#">Python Reference</a></li>
+                    <li><a href="./SQL/Sqlhome.html">SQL Reference</a></li>
+                    <li><a href="./Python/pythonhome.html">Python Reference</a></li>
                     <li><a href="#">W3.CSS Reference</a></li>
                     <li><a href="#">Bootstrap Reference</a></li>
                     <li><a href="#">PHP Reference</a></li>
@@ -531,8 +527,8 @@
                     <li><a href="#">CSS Examples</a></li>
                     <li><a href="#">JavaScript Examples</a></li>
                     <li><a href="#">How To Examples</a></li>
-                    <li><a href="./cssfolder/SQL/sqltutorial.html">SQL Examples</a></li>
-                    <li><a href="#">Python Examples</a></li>
+                    <li><a href="./SQL/Sqlhome.html">SQL Examples</a></li>
+                    <li><a href="./Python/pythonhome.html">Python Examples</a></li>
                     <li><a href="#">W3.CSS Examples</a></li>
                     <li><a href="#">Bootstrap Examples</a></li>
                     <li><a href="#">PHP Examples</a></li>
@@ -549,8 +545,8 @@
                     <li><a href="#">CSS Certificate</a></li>
                     <li><a href="#">JavaScript Certificate</a></li>
                     <li><a href="#">Front End Certificate</a></li>
-                    <li><a href="./cssfolder/SQL/sqltutorial.html">SQL Certificate</a></li>
-                    <li><a href="#">Python Certificate</a></li>
+                    <li><a href="./SQL/Sqlhome.html">SQL Certificate</a></li>
+                    <li><a href="./Python/pythonhome.html">Python Certificate</a></li>
                     <li><a href="#">PHP Certificate</a></li>
                     <li><a href="#">jQuery Certificate</a></li>
                     <li><a href="#">Java Certificate</a></li>
@@ -584,70 +580,7 @@
         </div>
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const menu = document.getElementById('menu');
-          const btnLeft = document.querySelector('.scroll-left');
-          const btnRight = document.querySelector('.scroll-right');
-    
-          if (!menu || !btnLeft || !btnRight) {
-            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
-            return;
-          }
-    
-          // Step size: ~70% of visible area so it feels natural on different screen sizes
-          const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
-    
-          // Update button disabled state (disable when at ends)
-          function updateButtons() {
-            const atStart = menu.scrollLeft <= 0;
-            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
-            btnLeft.disabled = atStart;
-            btnRight.disabled = atEnd;
-    
-            // debug log - remove if noisy
-            console.log({
-              scrollLeft: menu.scrollLeft,
-              clientWidth: menu.clientWidth,
-              scrollWidth: menu.scrollWidth,
-              atStart,
-              atEnd
-            });
-          }
-    
-          // Scroll handlers
-          btnLeft.addEventListener('click', () => {
-            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
-          });
-    
-          btnRight.addEventListener('click', () => {
-            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
-          });
-    
-          // Update when the menu scrolls (user drag / wheel)
-          menu.addEventListener('scroll', () => {
-            // throttle-ish using requestAnimationFrame
-            window.requestAnimationFrame(updateButtons);
-          });
-    
-          // initial state + small safety check for CSS issues
-          updateButtons();
-    
-          // Debug helper: check computed styles that often cause problems
-          const cs = getComputedStyle(menu);
-          if (cs.display !== 'flex' || cs.overflowX === 'visible' || cs.flexWrap === 'wrap') {
-            console.warn('Check CSS for #menu — expected display:flex, overflow-x:auto and no wrapping.', {
-              display: cs.display,
-              overflowX: cs.overflowX,
-              flexWrap: cs.flexWrap
-            });
-          }
-    
-          // Ensure buttons update after smooth scroll finishes (some browsers need this)
-          menu.addEventListener('scrollend' /* not standard, but safe to keep */, updateButtons, { once: false });
-          // fallback: poll after clicks for a short time to catch end state
-          btnLeft.addEventListener('click', () => setTimeout(updateButtons, 300));
-          btnRight.addEventListener('click', () => setTimeout(updateButtons, 300));
-        });
+       
       </script>
       
         

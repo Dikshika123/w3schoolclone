@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Escape Characters</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../Html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+        <div class="nav-brand">
+            <a href="../../index.html" class="logo">
+                <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <div class="nav-item">
+                <span>Tutorials</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>References</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Exercises</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Certificates</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search ..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+
+    <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorial-menu" id="menu">
+            <a href="../../Html.html" class="tutorial-item">HTML</a>
+            <a href="../../cssfolder/css.html" class="tutorial-item">CSS</a>
+            <a href="../../cssfolder/Javascript/jstutorial.html" class="tutorial-item">JAVASCRIPT</a>
+            <a href="../../SQL/Sqlhome.html" class="tutorial-item">SQL</a>
+            <a href="../pythonhome.html" class="tutorial-item active">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="#" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+            <a href="#" class="tutorial-item">PANDAS</a>
+            <a href="#" class="tutorial-item">Node js</a>
+            <a href="#" class="tutorial-item">DSA</a>
+            <a href="#" class="tutorial-item">TYPESCRIPT</a>
+            <a href="#" class="tutorial-item">ANGULAR</a>
+            <a href="#" class="tutorial-item">ANGULAR JS</a>
+            <a href="#" class="tutorial-item">GIT</a>
+            <a href="#" class="tutorial-item">POSTGRESQL</a>
+            <a href="#" class="tutorial-item">MONGODB</a>
+            <a href="#" class="tutorial-item">ASP</a>
+            <a href="#" class="tutorial-item">AI</a>
+            <a href="#" class="tutorial-item">R</a>
+            <a href="#" class="tutorial-item">GO</a>
+            <a href="#" class="tutorial-item">KOTLIN</a>
+            <a href="#" class="tutorial-item">SAAS</a>
+            <a href="#" class="tutorial-item">VUE</a>
+            <a href="#" class="tutorial-item">GEN AI</a>
+            <a href="#" class="tutorial-item">SCIPY</a>
+            <a href="#" class="tutorial-item">CYBER SECURITY</a>
+            <a href="#" class="tutorial-item">DATA SCIENCE</a>
+            <a href="#" class="tutorial-item">INTRO TO PROGRAMMING</a>
+            <a href="#" class="tutorial-item">Rush</a>
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+    </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidenavbar">
+            <h2>Python Strings</h2>
+            <a href="pythonstrings.html">Python Strings</a>
+            <a href="slicingstrings.html">Slicing Strings</a>
+            <a href="modifystrings.html">Modify Strings</a>
+            <a href="concatenatestrings.html">Concatenate Strings</a>
+            <a href="formatstrings.html">Format Strings</a>
+            <a href="escapecharacters.html" class="active">Escape Characters</a>
+            <a href="stringmethods.html">String Methods</a>
+            <a href="stringexercises.html">String Exercises</a>
+        </div>
+        
+        <div class="main-content">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > 
+                <a href="../pythonhome.html">Python Tutorial</a> > 
+                <a href="#">Python Strings</a> > 
+                <span>Escape Characters</span>
+            </div>
+            <h1>Python Escape Characters</h1>
+            <h2>Escape Character</h2>
+            <p>To insert characters that are illegal in a string, use an escape character.</p>
+            <p>An escape character is a backslash \ followed by the character you want to insert.</p>
+            <p>An example of an illegal character is a double quote inside a string that is surrounded by double quotes:</p>
+            
+            <div class="code-example">
+                <pre><code>txt = <span class="code-string">"We are the so-called "Vikings" from the north."</span></code></pre>
+            </div>
+            
+            <p>To fix this problem, use the escape character \":</p>
+            
+            <div class="code-example">
+                <pre><code>txt = <span class="code-string">"We are the so-called \"Vikings\" from the north."</span></code></pre>
+            </div>
+            
+            <h2>Other escape characters used in Python:</h2>
+            <table>
+                <tr>
+                    <th>Code</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>\'</td>
+                    <td>Single Quote</td>
+                </tr>
+                <tr>
+                    <td>\\</td>
+                    <td>Backslash</td>
+                </tr>
+                <tr>
+                    <td>\n</td>
+                    <td>New Line</td>
+                </tr>
+                <tr>
+                    <td>\r</td>
+                    <td>Carriage Return</td>
+                </tr>
+                <tr>
+                    <td>\t</td>
+                    <td>Tab</td>
+                </tr>
+                <tr>
+                    <td>\b</td>
+                    <td>Backspace</td>
+                </tr>
+                <tr>
+                    <td>\f</td>
+                    <td>Form Feed</td>
+                </tr>
+                <tr>
+                    <td>\ooo</td>
+                    <td>Octal value</td>
+                </tr>
+                <tr>
+                    <td>\xhh</td>
+                    <td>Hex value</td>
+                </tr>
+            </table>
+            
+            <h2>Examples of Escape Characters</h2>
+            
+            <h3>Single Quote</h3>
+            <div class="code-example">
+                <pre><code>txt = <span class="code-string">'It\'s alright.'</span>
+<span class="code-keyword">print</span>(txt)</code></pre>
+            </div>
+            
+            <h3>Backslash</h3>
+            <div class="code-example">
+                <pre><code>txt = <span class="code-string">"This will insert one \\ (backslash)."</span>
+<span class="code-keyword">print</span>(txt)</code></pre>
+            </div>
+            
+            <h3>New Line</h3>
+            <div class="code-example">
+                <pre><code>txt = <span class="code-string">"Hello\nWorld!"</span>
+<span class="code-keyword">print</span>(txt)</code></pre>
+            </div>
+            
+            <h3>Carriage Return</h3>
+            <div class="code-example">
+                <pre><code>txt = <span class="code-string">"Hello\rWorld!"</span>
+<span class="code-keyword">print</span>(txt)</code></pre>
+            </div>
+            
+            <h3>Tab</h3>
+            <div class="code-example">
+                <pre><code>txt = <span class="code-string">"Hello\tWorld!"</span>
+<span class="code-keyword">print</span>(txt)</code></pre>
+            </div>
+            
+            <h3>Backspace</h3>
+            <div class="code-example">
+                <pre><code>txt = <span class="code-string">"Hello \bWorld!"</span>
+<span class="code-keyword">print</span>(txt)</code></pre>
+            </div>
+            
+            <h3>Form Feed</h3>
+            <div class="code-example">
+                <pre><code>txt = <span class="code-string">"Hello\fWorld!"</span>
+<span class="code-keyword">print</span>(txt)</code></pre>
+            </div>
+            
+            <h3>Octal Value</h3>
+            <div class="code-example">
+                <pre><code><span class="code-comment"># A backslash followed by three integers will result in a octal value:</span>
+txt = <span class="code-string">"\110\145\154\154\157"</span>
+<span class="code-keyword">print</span>(txt)</code></pre>
+            </div>
+            
+            <h3>Hex Value</h3>
+            <div class="code-example">
+                <pre><code><span class="code-comment"># A backslash followed by an 'x' and a hex number represents a hex value:</span>
+txt = <span class="code-string">"\x48\x65\x6c\x6c\x6f"</span>
+<span class="code-keyword">print</span>(txt)</code></pre>
+            </div>
+            
+            <h2>Raw Strings</h2>
+            <p>You can use raw strings to avoid escape characters:</p>
+            
+            <div class="code-example">
+                <pre><code><span class="code-comment"># Regular string with escape characters</span>
+path1 = <span class="code-string">"C:\\Users\\John\\Documents"</span>
+
+<span class="code-comment"># Raw string (no escape characters needed)</span>
+path2 = <span class="code-string">r"C:\Users\John\Documents"</span>
+
+<span class="code-keyword">print</span>(path1)
+<span class="code-keyword">print</span>(path2)</code></pre>
+            </div>
+            
+            <div class="button-container">
+                <button class="left" onclick="window.location.href='formatstrings.html'">Previous</button>
+                <button class="right" onclick="window.location.href='stringmethods.html'">Next</button>
+            </div>
+        </div>
+        
+        <div class="right-blank">
+            
+        </div>
+        
+    </div>
+    
+
+<script>
+    
+    function scrollLeft() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    }
+
+    function scrollRight() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    }
+
+    // Enhanced scroll functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.getElementById('menu');
+        const btnLeft = document.querySelector('.scroll-left');
+        const btnRight = document.querySelector('.scroll-right');
+
+        if (!menu || !btnLeft || !btnRight) {
+            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
+            return;
+        }
+
+        const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
+
+        function updateButtons() {
+            const atStart = menu.scrollLeft <= 0;
+            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
+            btnLeft.disabled = atStart;
+            btnRight.disabled = atEnd;
+        }
+
+        btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+
+        btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+
+        menu.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python RegEx - W3School Clone</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python RegEx</h1>
+        <p>Regular expressions (RegEx) are a sequence of characters that form a search pattern. Python has a built-in module called <code>re</code> to work with regular expressions.</p>
+        
+        <h2>Import the re Module</h2>
+        <div class="code-block">
+            <pre><code>import re</code></pre>
+        </div>
+        
+        <h2>Basic RegEx Functions</h2>
+        <div class="code-block">
+            <pre><code>import re
+
+text = "The rain in Spain"
+
+# search() - Returns a Match object if there is a match
+x = re.search("Spain", text)
+print(x)  # <re.Match object; span=(12, 17), match='Spain'>
+
+# findall() - Returns a list containing all matches
+x = re.findall("ai", text)
+print(x)  # ['ai', 'ai']
+
+# split() - Returns a list where the string has been split
+x = re.split("\s", text)
+print(x)  # ['The', 'rain', 'in', 'Spain']
+
+# sub() - Replaces one or many matches with a string
+x = re.sub("\s", "9", text)
+print(x)  # The9rain9in9Spain</code></pre>
+        </div>
+        
+        <h2>RegEx Metacharacters</h2>
+        <table>
+            <tr>
+                <th>Character</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>[]</td>
+                <td>A set of characters</td>
+                <td>"[a-m]"</td>
+            </tr>
+            <tr>
+                <td>\</td>
+                <td>Signals a special sequence</td>
+                <td>"\d"</td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>Any character (except newline)</td>
+                <td>"he..o"</td>
+            </tr>
+            <tr>
+                <td>^</td>
+                <td>Starts with</td>
+                <td>"^hello"</td>
+            </tr>
+            <tr>
+                <td>$</td>
+                <td>Ends with</td>
+                <td>"world$"</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Zero or more occurrences</td>
+                <td>"aix*"</td>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>One or more occurrences</td>
+                <td>"aix+"</td>
+            </tr>
+            <tr>
+                <td>{}</td>
+                <td>Exactly the specified number</td>
+                <td>"al{2}"</td>
+            </tr>
+            <tr>
+                <td>|</td>
+                <td>Either or</td>
+                <td>"falls|stays"</td>
+            </tr>
+        </table>
+        
+        <h2>Special Sequences</h2>
+        <div class="code-block">
+            <pre><code>import re
+
+text = "The rain in Spain falls mainly in the plain"
+
+# \d - Matches any digit
+x = re.findall("\d", text)
+print(x)  # []
+
+# \D - Matches any non-digit
+x = re.findall("\D", text)
+print(x)  # ['T', 'h', 'e', ' ', 'r', 'a', 'i', 'n', ...]
+
+# \s - Matches any whitespace
+x = re.findall("\s", text)
+print(x)  # [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+
+# \S - Matches any non-whitespace
+x = re.findall("\S", text)
+print(x)  # ['T', 'h', 'e', 'r', 'a', 'i', 'n', 'i', 'n', ...]
+
+# \w - Matches any word character
+x = re.findall("\w", text)
+print(x)  # ['T', 'h', 'e', 'r', 'a', 'i', 'n', 'i', 'n', ...]
+
+# \W - Matches any non-word character
+x = re.findall("\W", text)
+print(x)  # [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']</code></pre>
+        </div>
+        
+        <h2>Sets</h2>
+        <div class="code-block">
+            <pre><code>import re
+
+text = "The rain in Spain"
+
+# [arn] - Returns a match for any one of the specified characters
+x = re.findall("[arn]", text)
+print(x)  # ['r', 'a', 'i', 'n', 'a', 'i', 'n']
+
+# [a-n] - Returns a match for any lowercase letter between a and n
+x = re.findall("[a-n]", text)
+print(x)  # ['h', 'e', 'r', 'a', 'i', 'n', 'i', 'n', 'a', 'i', 'n']
+
+# [^arn] - Returns a match for any character EXCEPT a, r, and n
+x = re.findall("[^arn]", text)
+print(x)  # ['T', 'h', 'e', ' ', 'i', ' ', 'i', ' ', 'S', 'p', 'i']
+
+# [0123] - Returns a match for any digit in the string
+x = re.findall("[0123]", text)
+print(x)  # []
+
+# [0-9] - Returns a match for any digit between 0 and 9
+x = re.findall("[0-9]", text)
+print(x)  # []</code></pre>
+        </div>
+        
+        <h2>Match Object</h2>
+        <div class="code-block">
+            <pre><code>import re
+
+text = "The rain in Spain"
+x = re.search("ai", text)
+
+print(x)  # <re.Match object; span=(5, 7), match='ai'>
+print(x.span())  # (5, 7)
+print(x.string)  # The rain in Spain
+print(x.group())  # ai</code></pre>
+        </div>
+        
+        <h2>Compile RegEx</h2>
+        <div class="code-block">
+            <pre><code>import re
+
+# Compile a RegEx pattern
+pattern = re.compile(r'\b\w{4}\b')  # 4-letter words
+text = "The quick brown fox jumps over the lazy dog"
+
+# Use the compiled pattern
+matches = pattern.findall(text)
+print(matches)  # ['quick', 'brown', 'jumps', 'over', 'lazy']</code></pre>
+        </div>
+        
+        <h2>Flags</h2>
+        <div class="code-block">
+            <pre><code>import re
+
+text = "The rain in Spain"
+
+# IGNORECASE - Case insensitive matching
+x = re.findall("spain", text, re.IGNORECASE)
+print(x)  # ['Spain']
+
+# MULTILINE - ^ and $ match start/end of each line
+x = re.findall("^The", text, re.MULTILINE)
+print(x)  # ['The']
+
+# DOTALL - . matches newline characters
+x = re.findall("rain.*Spain", text, re.DOTALL)
+print(x)  # ['rain in Spain']</code></pre>
+        </div>
+    </div>
+</body>
+</html>

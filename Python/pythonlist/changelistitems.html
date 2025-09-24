@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Change List Items</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../Html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+        <div class="nav-brand">
+            <a href="../../index.html" class="logo">
+                <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <div class="nav-item">
+                <span>Tutorials</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>References</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Exercises</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Certificates</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search ..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+
+    <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorial-menu" id="menu">
+            <a href="../../Html.html" class="tutorial-item">HTML</a>
+            <a href="../../cssfolder/css.html" class="tutorial-item">CSS</a>
+            <a href="../../cssfolder/Javascript/jstutorial.html" class="tutorial-item">JAVASCRIPT</a>
+            <a href="../../SQL/Sqlhome.html" class="tutorial-item">SQL</a>
+            <a href="../pythonhome.html" class="tutorial-item active">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="#" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+            <a href="#" class="tutorial-item">PANDAS</a>
+            <a href="#" class="tutorial-item">Node js</a>
+            <a href="#" class="tutorial-item">DSA</a>
+            <a href="#" class="tutorial-item">TYPESCRIPT</a>
+            <a href="#" class="tutorial-item">ANGULAR</a>
+            <a href="#" class="tutorial-item">ANGULAR JS</a>
+            <a href="#" class="tutorial-item">GIT</a>
+            <a href="#" class="tutorial-item">POSTGRESQL</a>
+            <a href="#" class="tutorial-item">MONGODB</a>
+            <a href="#" class="tutorial-item">ASP</a>
+            <a href="#" class="tutorial-item">AI</a>
+            <a href="#" class="tutorial-item">R</a>
+            <a href="#" class="tutorial-item">GO</a>
+            <a href="#" class="tutorial-item">KOTLIN</a>
+            <a href="#" class="tutorial-item">SAAS</a>
+            <a href="#" class="tutorial-item">VUE</a>
+            <a href="#" class="tutorial-item">GEN AI</a>
+            <a href="#" class="tutorial-item">SCIPY</a>
+            <a href="#" class="tutorial-item">CYBER SECURITY</a>
+            <a href="#" class="tutorial-item">DATA SCIENCE</a>
+            <a href="#" class="tutorial-item">INTRO TO PROGRAMMING</a>
+            <a href="#" class="tutorial-item">Rush</a>
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+    </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidenavbar">
+            <h2>Python Lists</h2>
+            <a href="Pythonlist.html">Python Lists</a>
+            <a href="acesslist.html">Access List Items</a>
+            <a href="changelistitems.html" class="active">Change List Items</a>
+            <a href="addlistitems.html">Add List Items</a>
+            <a href="removelistitems.html">Remove List Items</a>
+            <a href="looplists.html">Loop Lists</a>
+            <a href="listcomprehension.html">List Comprehension</a>
+            <a href="sortlists.html">Sort Lists</a>
+            <a href="copylists.html">Copy Lists</a>
+            <a href="joinlists.html">Join Lists</a>
+            <a href="listmethods.html">List Methods</a>
+            <a href="listexercises.html">List Exercises</a>
+        </div>
+        
+        <div class="main-content">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > 
+                <a href="../pythonhome.html">Python Tutorial</a> > 
+                <a href="#">Python Lists</a> > 
+                <span>Change List Items</span>
+            </div>
+            <h1>Python Change List Items</h1>
+            <h2>Change Item Value</h2>
+            <p>To change the value of a specific item, refer to the index number:</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+thislist[<span class="code-number">1</span>] = <span class="code-string">"blackcurrant"</span>
+<span class="code-keyword">print</span>(thislist)</code></pre>
+            </div>
+            
+            <h2>Change a Range of Item Values</h2>
+            <p>To change the value of items within a specific range, define a list with the new values, and refer to the range of index numbers where you want to insert the new values:</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>, <span class="code-string">"orange"</span>, <span class="code-string">"kiwi"</span>, <span class="code-string">"mango"</span>]
+thislist[<span class="code-number">1</span>:<span class="code-number">3</span>] = [<span class="code-string">"blackcurrant"</span>, <span class="code-string">"watermelon"</span>]
+<span class="code-keyword">print</span>(thislist)</code></pre>
+            </div>
+            
+            <p>If you insert more items than you replace, the new items will be inserted where you specified, and the remaining items will move accordingly:</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+thislist[<span class="code-number">1</span>:<span class="code-number">2</span>] = [<span class="code-string">"blackcurrant"</span>, <span class="code-string">"watermelon"</span>]
+<span class="code-keyword">print</span>(thislist)</code></pre>
+            </div>
+            
+            <p>If you insert less items than you replace, the new items will be inserted where you specified, and the remaining items will move accordingly:</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+thislist[<span class="code-number">1</span>:<span class="code-number">3</span>] = [<span class="code-string">"watermelon"</span>]
+<span class="code-keyword">print</span>(thislist)</code></pre>
+            </div>
+            
+            <h2>Change Multiple Items</h2>
+            <p>You can change multiple items at once by using slicing:</p>
+            
+            <div class="code-example">
+                <pre><code>fruits = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>, <span class="code-string">"orange"</span>, <span class="code-string">"kiwi"</span>]
+fruits[<span class="code-number">0</span>:<span class="code-number">2</span>] = [<span class="code-string">"grape"</span>, <span class="code-string">"strawberry"</span>]
+<span class="code-keyword">print</span>(fruits)</code></pre>
+            </div>
+            
+            <h2>Change Items with Negative Indexing</h2>
+            <p>You can also use negative indexing to change items:</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>, <span class="code-string">"orange"</span>, <span class="code-string">"kiwi"</span>]
+thislist[-<span class="code-number">1</span>] = <span class="code-string">"mango"</span>
+<span class="code-keyword">print</span>(thislist)</code></pre>
+            </div>
+            
+            <h2>Change Items with Step</h2>
+            <p>You can change items with a step value:</p>
+            
+            <div class="code-example">
+                <pre><code>numbers = [<span class="code-number">1</span>, <span class="code-number">2</span>, <span class="code-number">3</span>, <span class="code-number">4</span>, <span class="code-number">5</span>, <span class="code-number">6</span>]
+numbers[<span class="code-number">0</span>::<span class="code-number">2</span>] = [<span class="code-number">10</span>, <span class="code-number">30</span>, <span class="code-number">50</span>]
+<span class="code-keyword">print</span>(numbers)</code></pre>
+            </div>
+            
+            <h2>Modify List Items in Place</h2>
+            <p>You can modify list items using various methods:</p>
+            
+            <div class="code-example">
+                <pre><code>colors = [<span class="code-string">"red"</span>, <span class="code-string">"green"</span>, <span class="code-string">"blue"</span>]
+
+<span class="code-comment"># Change first item</span>
+colors[<span class="code-number">0</span>] = <span class="code-string">"yellow"</span>
+
+<span class="code-comment"># Change last item</span>
+colors[-<span class="code-number">1</span>] = <span class="code-string">"purple"</span>
+
+<span class="code-comment"># Change middle items</span>
+colors[<span class="code-number">1</span>:<span class="code-number">2</span>] = [<span class="code-string">"orange"</span>, <span class="code-string">"pink"</span>]
+
+<span class="code-keyword">print</span>(colors)</code></pre>
+            </div>
+            
+            <div class="button-container">
+                <button class="left" onclick="window.location.href='acesslist.html'">Previous</button>
+                <button class="right" onclick="window.location.href='addlistitems.html'">Next</button>
+            </div>
+        </div>
+        
+        <div class="right-blank">
+            
+        </div>
+        
+    </div>
+    
+
+<script>
+    
+    function scrollLeft() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    }
+
+    function scrollRight() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    }
+
+    // Enhanced scroll functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.getElementById('menu');
+        const btnLeft = document.querySelector('.scroll-left');
+        const btnRight = document.querySelector('.scroll-right');
+
+        if (!menu || !btnLeft || !btnRight) {
+            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
+            return;
+        }
+
+        const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
+
+        function updateButtons() {
+            const atStart = menu.scrollLeft <= 0;
+            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
+            btnLeft.disabled = atStart;
+            btnRight.disabled = atEnd;
+        }
+
+        btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+
+        btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+
+        menu.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Scope - W3School Clone</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python Scope</h1>
+        <p>Scope refers to the region of a program where a variable is accessible.</p>
+        
+        <h2>Types of Scope</h2>
+        <ul>
+            <li><strong>Local Scope:</strong> Variables defined inside a function</li>
+            <li><strong>Enclosing Scope:</strong> Variables in the enclosing function (nested functions)</li>
+            <li><strong>Global Scope:</strong> Variables defined at the top level of a module</li>
+            <li><strong>Built-in Scope:</strong> Names in the built-in module</li>
+        </ul>
+        
+        <h2>Local Scope</h2>
+        <div class="code-block">
+            <pre><code>def my_function():
+    x = 300  # Local variable
+    print(x)
+
+my_function()
+# print(x)  # This would cause an error - x is not defined globally</code></pre>
+        </div>
+        
+        <h2>Global Scope</h2>
+        <div class="code-block">
+            <pre><code>x = 300  # Global variable
+
+def my_function():
+    print(x)  # Can access global variable
+
+my_function()
+print(x)  # Can access global variable</code></pre>
+        </div>
+        
+        <h2>Global Keyword</h2>
+        <div class="code-block">
+            <pre><code>x = 300
+
+def my_function():
+    global x
+    x = 200  # This changes the global variable
+    print(x)
+
+my_function()
+print(x)  # Now x is 200</code></pre>
+        </div>
+        
+        <h2>Nonlocal Keyword</h2>
+        <div class="code-block">
+            <pre><code>def outer_function():
+    x = 300  # Enclosing scope
+    
+    def inner_function():
+        nonlocal x
+        x = 200  # This changes the enclosing scope variable
+        print(x)
+    
+    inner_function()
+    print(x)  # Now x is 200
+
+outer_function()</code></pre>
+        </div>
+        
+        <h2>Scope Example</h2>
+        <div class="code-block">
+            <pre><code># Global scope
+global_var = "I'm global"
+
+def outer_function():
+    # Enclosing scope
+    enclosing_var = "I'm enclosing"
+    
+    def inner_function():
+        # Local scope
+        local_var = "I'm local"
+        print(global_var)    # Can access global
+        print(enclosing_var) # Can access enclosing
+        print(local_var)     # Can access local
+    
+    inner_function()
+
+outer_function()</code></pre>
+        </div>
+        
+        <h2>Variable Shadowing</h2>
+        <div class="code-block">
+            <pre><code>x = 10  # Global x
+
+def my_function():
+    x = 20  # Local x shadows global x
+    print(f"Local x: {x}")
+
+my_function()
+print(f"Global x: {x}")  # Global x is unchanged</code></pre>
+        </div>
+        
+        <h2>Built-in Scope</h2>
+        <div class="code-block">
+            <pre><code># Built-in functions are in built-in scope
+print(len("Hello"))  # len is a built-in function
+print(max(1, 2, 3))  # max is a built-in function
+
+# You can override built-in names (not recommended)
+len = 5
+# print(len("Hello"))  # This would cause an error now</code></pre>
+        </div>
+        
+        <h2>Scope Resolution Order (LEGB)</h2>
+        <p>Python follows the LEGB rule when looking for variables:</p>
+        <ol>
+            <li><strong>L</strong>ocal scope</li>
+            <li><strong>E</strong>nclosing scope</li>
+            <li><strong>G</strong>lobal scope</li>
+            <li><strong>B</strong>uilt-in scope</li>
+        </ol>
+    </div>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Copy Lists</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../Html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+        <div class="nav-brand">
+            <a href="../../index.html" class="logo">
+                <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <div class="nav-item">
+                <span>Tutorials</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>References</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Exercises</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Certificates</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search ..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+
+    <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorial-menu" id="menu">
+            <a href="../../Html.html" class="tutorial-item">HTML</a>
+            <a href="../../cssfolder/css.html" class="tutorial-item">CSS</a>
+            <a href="../../cssfolder/Javascript/jstutorial.html" class="tutorial-item">JAVASCRIPT</a>
+            <a href="../../SQL/Sqlhome.html" class="tutorial-item">SQL</a>
+            <a href="../pythonhome.html" class="tutorial-item active">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="#" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+            <a href="#" class="tutorial-item">PANDAS</a>
+            <a href="#" class="tutorial-item">Node js</a>
+            <a href="#" class="tutorial-item">DSA</a>
+            <a href="#" class="tutorial-item">TYPESCRIPT</a>
+            <a href="#" class="tutorial-item">ANGULAR</a>
+            <a href="#" class="tutorial-item">ANGULAR JS</a>
+            <a href="#" class="tutorial-item">GIT</a>
+            <a href="#" class="tutorial-item">POSTGRESQL</a>
+            <a href="#" class="tutorial-item">MONGODB</a>
+            <a href="#" class="tutorial-item">ASP</a>
+            <a href="#" class="tutorial-item">AI</a>
+            <a href="#" class="tutorial-item">R</a>
+            <a href="#" class="tutorial-item">GO</a>
+            <a href="#" class="tutorial-item">KOTLIN</a>
+            <a href="#" class="tutorial-item">SAAS</a>
+            <a href="#" class="tutorial-item">VUE</a>
+            <a href="#" class="tutorial-item">GEN AI</a>
+            <a href="#" class="tutorial-item">SCIPY</a>
+            <a href="#" class="tutorial-item">CYBER SECURITY</a>
+            <a href="#" class="tutorial-item">DATA SCIENCE</a>
+            <a href="#" class="tutorial-item">INTRO TO PROGRAMMING</a>
+            <a href="#" class="tutorial-item">Rush</a>
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+    </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidenavbar">
+            <h2>Python Lists</h2>
+            <a href="Pythonlist.html">Python Lists</a>
+            <a href="acesslist.html">Access List Items</a>
+            <a href="changelistitems.html">Change List Items</a>
+            <a href="addlistitems.html">Add List Items</a>
+            <a href="removelistitems.html">Remove List Items</a>
+            <a href="looplists.html">Loop Lists</a>
+            <a href="listcomprehension.html">List Comprehension</a>
+            <a href="sortlists.html">Sort Lists</a>
+            <a href="copylists.html" class="active">Copy Lists</a>
+            <a href="joinlists.html">Join Lists</a>
+            <a href="listmethods.html">List Methods</a>
+            <a href="listexercises.html">List Exercises</a>
+           
+        </div>
+        
+        <div class="main-content">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > 
+                <a href="../pythonhome.html">Python Tutorial</a> > 
+                <a href="#">Python Lists</a> > 
+                <span>Copy Lists</span>
+            </div>
+            <h1>Python Copy Lists</h1>
+            <h2>Copy a List</h2>
+            <p>You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, and changes made in list1 will automatically also be made in list2.</p>
+            <p>There are ways to make a copy, one way is to use the built-in List method copy().</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+mylist = thislist.copy()
+<span class="code-keyword">print</span>(mylist)</code></pre>
+            </div>
+            
+            <h2>Another way to make a copy is to use the built-in method list().</h2>
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+mylist = <span class="code-keyword">list</span>(thislist)
+<span class="code-keyword">print</span>(mylist)</code></pre>
+            </div>
+            
+            <h2>Shallow Copy vs Deep Copy</h2>
+            <p>The copy() method creates a shallow copy. For nested lists, you need deep copy:</p>
+            
+            <div class="code-example">
+                <pre><code><span class="code-keyword">import</span> copy
+
+original = [[<span class="code-number">1</span>, <span class="code-number">2</span>, <span class="code-number">3</span>], [<span class="code-number">4</span>, <span class="code-number">5</span>, <span class="code-number">6</span>]]
+
+<span class="code-comment"># Shallow copy</span>
+shallow = original.copy()
+shallow[<span class="code-number">0</span>][<span class="code-number">0</span>] = <span class="code-number">999</span>
+<span class="code-keyword">print</span>(<span class="code-string">"Original:"</span>, original)  <span class="code-comment"># Also changed!</span>
+
+<span class="code-comment"># Deep copy</span>
+original = [[<span class="code-number">1</span>, <span class="code-number">2</span>, <span class="code-number">3</span>], [<span class="code-number">4</span>, <span class="code-number">5</span>, <span class="code-number">6</span>]]
+deep = copy.deepcopy(original)
+deep[<span class="code-number">0</span>][<span class="code-number">0</span>] = <span class="code-number">999</span>
+<span class="code-keyword">print</span>(<span class="code-string">"Original:"</span>, original)  <span class="code-comment"># Unchanged</span></code></pre>
+            </div>
+            
+            <h2>Copy Using Slicing</h2>
+            <p>You can also copy a list using slicing:</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+mylist = thislist[:]
+<span class="code-keyword">print</span>(mylist)</code></pre>
+            </div>
+            
+            <h2>Copy Using List Comprehension</h2>
+            <p>You can copy a list using list comprehension:</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+mylist = [x <span class="code-keyword">for</span> x <span class="code-keyword">in</span> thislist]
+<span class="code-keyword">print</span>(mylist)</code></pre>
+            </div>
+            
+            <h2>Copy with Modifications</h2>
+            <p>You can copy and modify at the same time:</p>
+            
+            <div class="code-example">
+                <pre><code>original = [<span class="code-number">1</span>, <span class="code-number">2</span>, <span class="code-number">3</span>, <span class="code-number">4</span>, <span class="code-number">5</span>]
+
+<span class="code-comment"># Copy and square each element</span>
+squared = [x**<span class="code-number">2</span> <span class="code-keyword">for</span> x <span class="code-keyword">in</span> original]
+
+<span class="code-comment"># Copy and filter even numbers</span>
+evens = [x <span class="code-keyword">for</span> x <span class="code-keyword">in</span> original <span class="code-keyword">if</span> x % <span class="code-number">2</span> == <span class="code-number">0</span>]
+
+<span class="code-keyword">print</span>(<span class="code-string">"Original:"</span>, original)
+<span class="code-keyword">print</span>(<span class="code-string">"Squared:"</span>, squared)
+<span class="code-keyword">print</span>(<span class="code-string">"Evens:"</span>, evens)</code></pre>
+            </div>
+            
+            <h2>Copy Part of List</h2>
+            <p>You can copy only part of a list:</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>, <span class="code-string">"orange"</span>, <span class="code-string">"kiwi"</span>, <span class="code-string">"melon"</span>, <span class="code-string">"mango"</span>]
+
+<span class="code-comment"># Copy first 3 elements</span>
+first_three = thislist[:<span class="code-number">3</span>]
+
+<span class="code-comment"># Copy last 3 elements</span>
+last_three = thislist[-<span class="code-number">3</span>:]
+
+<span class="code-comment"># Copy middle elements</span>
+middle = thislist[<span class="code-number">2</span>:<span class="code-number">5</span>]
+
+<span class="code-keyword">print</span>(<span class="code-string">"First three:"</span>, first_three)
+<span class="code-keyword">print</span>(<span class="code-string">"Last three:"</span>, last_three)
+<span class="code-keyword">print</span>(<span class="code-string">"Middle:"</span>, middle)</code></pre>
+            </div>
+            
+            <h2>Copy with Step</h2>
+            <p>You can copy with a step:</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-number">1</span>, <span class="code-number">2</span>, <span class="code-number">3</span>, <span class="code-number">4</span>, <span class="code-number">5</span>, <span class="code-number">6</span>, <span class="code-number">7</span>, <span class="code-number">8</span>, <span class="code-number">9</span>, <span class="code-number">10</span>]
+
+<span class="code-comment"># Copy every other element</span>
+every_other = thislist[::<span class="code-number">2</span>]
+
+<span class="code-comment"># Copy every third element</span>
+every_third = thislist[::<span class="code-number">3</span>]
+
+<span class="code-keyword">print</span>(<span class="code-string">"Every other:"</span>, every_other)
+<span class="code-keyword">print</span>(<span class="code-string">"Every third:"</span>, every_third)</code></pre>
+            </div>
+            
+            <h2>Verify Copy Independence</h2>
+            <p>You can verify that the copy is independent:</p>
+            
+            <div class="code-example">
+                <pre><code>original = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+copy_list = original.copy()
+
+<span class="code-comment"># Modify the copy</span>
+copy_list.append(<span class="code-string">"orange"</span>)
+
+<span class="code-keyword">print</span>(<span class="code-string">"Original:"</span>, original)
+<span class="code-keyword">print</span>(<span class="code-string">"Copy:"</span>, copy_list)</code></pre>
+            </div>
+            
+            <div class="button-container">
+                <button class="left" onclick="window.location.href='sortlists.html'">Previous</button>
+                <button class="right" onclick="window.location.href='joinlists.html'">Next</button>
+            </div>
+        </div>
+        
+        <div class="right-blank">
+            
+        </div>
+        
+    </div>
+    
+
+<script>
+    
+    function scrollLeft() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    }
+
+    function scrollRight() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    }
+
+    // Enhanced scroll functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.getElementById('menu');
+        const btnLeft = document.querySelector('.scroll-left');
+        const btnRight = document.querySelector('.scroll-right');
+
+        if (!menu || !btnLeft || !btnRight) {
+            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
+            return;
+        }
+
+        const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
+
+        function updateButtons() {
+            const atStart = menu.scrollLeft <= 0;
+            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
+            btnLeft.disabled = atStart;
+            btnRight.disabled = atEnd;
+        }
+
+        btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+
+        btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+
+        menu.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+    });
+</script>
+
+</body>
+</html>

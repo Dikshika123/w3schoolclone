@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +12,12 @@ body {
 
 .container {
     display: flex;
-    min-height: 100vh;
+    min-height: calc(100vh - 90px); /* Fix */
+    margin-top: 90px; /* space for header */
 }
 
 .sidenavbar {
-    width: 200px;
+    width: 250px;
     background-color: #f1f1f1;
     padding: 0;
     position: fixed;
@@ -71,13 +73,12 @@ body {
 }
 
 .main-content {
-    margin-left: 220px;
+    margin-left: 250px;
     margin-top: 90px;
-    padding: 10px;
-    flex: 1;
+    padding: 20px;
     background-color: white;
-    min-height: calc(100vh - 120px);
-    position: relative;
+    min-height:calc(100vh - 90px);
+    position: fiexd;
     display: block !important;
 }
 
@@ -268,8 +269,7 @@ body {
 .dropdown.active .dropdown-content {
     display: block;
 }
-
-.dropdown.active .dropdown-btn {
+.dropdown.active .dropdown-btn{
     background-color: #04AA6D;
     color: white;
     font-weight: 600;
@@ -325,7 +325,6 @@ body {
     }
   
     nav ul {
-      flex-direction: column; /* navbar items ek ke neeche ek */
+      flex-direction: column; 
     }
   }
-  

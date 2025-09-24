@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Loop Lists</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../Html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+        <div class="nav-brand">
+            <a href="../../index.html" class="logo">
+                <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <div class="nav-item">
+                <span>Tutorials</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>References</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Exercises</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Certificates</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search ..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+
+    <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorial-menu" id="menu">
+            <a href="../../Html.html" class="tutorial-item">HTML</a>
+            <a href="../../cssfolder/css.html" class="tutorial-item">CSS</a>
+            <a href="../../cssfolder/Javascript/jstutorial.html" class="tutorial-item">JAVASCRIPT</a>
+            <a href="../../SQL/Sqlhome.html" class="tutorial-item">SQL</a>
+            <a href="../pythonhome.html" class="tutorial-item active">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="#" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+            <a href="#" class="tutorial-item">PANDAS</a>
+            <a href="#" class="tutorial-item">Node js</a>
+            <a href="#" class="tutorial-item">DSA</a>
+            <a href="#" class="tutorial-item">TYPESCRIPT</a>
+            <a href="#" class="tutorial-item">ANGULAR</a>
+            <a href="#" class="tutorial-item">ANGULAR JS</a>
+            <a href="#" class="tutorial-item">GIT</a>
+            <a href="#" class="tutorial-item">POSTGRESQL</a>
+            <a href="#" class="tutorial-item">MONGODB</a>
+            <a href="#" class="tutorial-item">ASP</a>
+            <a href="#" class="tutorial-item">AI</a>
+            <a href="#" class="tutorial-item">R</a>
+            <a href="#" class="tutorial-item">GO</a>
+            <a href="#" class="tutorial-item">KOTLIN</a>
+            <a href="#" class="tutorial-item">SAAS</a>
+            <a href="#" class="tutorial-item">VUE</a>
+            <a href="#" class="tutorial-item">GEN AI</a>
+            <a href="#" class="tutorial-item">SCIPY</a>
+            <a href="#" class="tutorial-item">CYBER SECURITY</a>
+            <a href="#" class="tutorial-item">DATA SCIENCE</a>
+            <a href="#" class="tutorial-item">INTRO TO PROGRAMMING</a>
+            <a href="#" class="tutorial-item">Rush</a>
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+    </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidenavbar">
+            <h2>Python Lists</h2>
+            <a href="Pythonlist.html">Python Lists</a>
+            <a href="acesslist.html">Access List Items</a>
+            <a href="changelistitems.html">Change List Items</a>
+            <a href="addlistitems.html">Add List Items</a>
+            <a href="removelistitems.html">Remove List Items</a>
+            <a href="looplists.html" class="active">Loop Lists</a>
+            <a href="listcomprehension.html">List Comprehension</a>
+            <a href="sortlists.html">Sort Lists</a>
+            <a href="copylists.html">Copy Lists</a>
+            <a href="joinlists.html">Join Lists</a>
+            <a href="listmethods.html">List Methods</a>
+            <a href="listexercises.html">List Exercises</a>
+        </div>
+        
+        <div class="main-content">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > 
+                <a href="../pythonhome.html">Python Tutorial</a> > 
+                <a href="#">Python Lists</a> > 
+                <span>Loop Lists</span>
+            </div>
+            <h1>Python Loop Lists</h1>
+            <h2>Loop Through a List</h2>
+            <p>You can loop through the list items by using a for loop:</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+<span class="code-keyword">for</span> x <span class="code-keyword">in</span> thislist:
+    <span class="code-keyword">print</span>(x)</code></pre>
+            </div>
+            
+            <h2>Loop Through the Index Numbers</h2>
+            <p>You can also loop through the list items by referring to their index number.</p>
+            <p>Use the range() and len() functions to create a suitable iterable.</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+<span class="code-keyword">for</span> i <span class="code-keyword">in</span> <span class="code-keyword">range</span>(<span class="code-keyword">len</span>(thislist)):
+    <span class="code-keyword">print</span>(thislist[i])</code></pre>
+            </div>
+            
+            <h2>Using a While Loop</h2>
+            <p>You can loop through the list items by using a while loop.</p>
+            <p>Use the len() function to determine the length of the list, then start at 0 and loop your way through the list items by referring to their indexes.</p>
+            <p>Remember to increase the index by 1 after each iteration.</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+i = <span class="code-number">0</span>
+<span class="code-keyword">while</span> i < <span class="code-keyword">len</span>(thislist):
+    <span class="code-keyword">print</span>(thislist[i])
+    i = i + <span class="code-number">1</span></code></pre>
+            </div>
+            
+            <h2>Looping Using List Comprehension</h2>
+            <p>List Comprehension offers the shortest syntax for looping through lists:</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+[<span class="code-keyword">print</span>(x) <span class="code-keyword">for</span> x <span class="code-keyword">in</span> thislist]</code></pre>
+            </div>
+            
+            <h2>Loop with Enumerate</h2>
+            <p>You can get both the index and the value using enumerate():</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+<span class="code-keyword">for</span> index, value <span class="code-keyword">in</span> <span class="code-keyword">enumerate</span>(thislist):
+    <span class="code-keyword">print</span>(<span class="code-string">f"Index: {index}, Value: {value}"</span>)</code></pre>
+            </div>
+            
+            <h2>Loop with Zip</h2>
+            <p>You can loop through multiple lists simultaneously using zip():</p>
+            
+            <div class="code-example">
+                <pre><code>fruits = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+colors = [<span class="code-string">"red"</span>, <span class="code-string">"yellow"</span>, <span class="code-string">"red"</span>]
+<span class="code-keyword">for</span> fruit, color <span class="code-keyword">in</span> <span class="code-keyword">zip</span>(fruits, colors):
+    <span class="code-keyword">print</span>(<span class="code-string">f"{fruit} is {color}"</span>)</code></pre>
+            </div>
+            
+            <h2>Loop with Range and Step</h2>
+            <p>You can loop through a list with a specific step:</p>
+            
+            <div class="code-example">
+                <pre><code>numbers = [<span class="code-number">1</span>, <span class="code-number">2</span>, <span class="code-number">3</span>, <span class="code-number">4</span>, <span class="code-number">5</span>, <span class="code-number">6</span>, <span class="code-number">7</span>, <span class="code-number">8</span>, <span class="code-number">9</span>, <span class="code-number">10</span>]
+<span class="code-keyword">for</span> i <span class="code-keyword">in</span> <span class="code-keyword">range</span>(<span class="code-number">0</span>, <span class="code-keyword">len</span>(numbers), <span class="code-number">2</span>):
+    <span class="code-keyword">print</span>(numbers[i])</code></pre>
+            </div>
+            
+            <h2>Loop Backwards</h2>
+            <p>You can loop through a list backwards:</p>
+            
+            <div class="code-example">
+                <pre><code>thislist = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+<span class="code-keyword">for</span> i <span class="code-keyword">in</span> <span class="code-keyword">range</span>(<span class="code-keyword">len</span>(thislist) - <span class="code-number">1</span>, -<span class="code-number">1</span>, -<span class="code-number">1</span>):
+    <span class="code-keyword">print</span>(thislist[i])</code></pre>
+            </div>
+            
+            <h2>Loop with Conditions</h2>
+            <p>You can add conditions inside the loop:</p>
+            
+            <div class="code-example">
+                <pre><code>numbers = [<span class="code-number">1</span>, <span class="code-number">2</span>, <span class="code-number">3</span>, <span class="code-number">4</span>, <span class="code-number">5</span>, <span class="code-number">6</span>, <span class="code-number">7</span>, <span class="code-number">8</span>, <span class="code-number">9</span>, <span class="code-number">10</span>]
+<span class="code-keyword">for</span> num <span class="code-keyword">in</span> numbers:
+    <span class="code-keyword">if</span> num % <span class="code-number">2</span> == <span class="code-number">0</span>:
+        <span class="code-keyword">print</span>(<span class="code-string">f"{num} is even"</span>)
+    <span class="code-keyword">else</span>:
+        <span class="code-keyword">print</span>(<span class="code-string">f"{num} is odd"</span>)</code></pre>
+            </div>
+            
+            <h2>Nested Loops</h2>
+            <p>You can have loops inside loops:</p>
+            
+            <div class="code-example">
+                <pre><code>matrix = [[<span class="code-number">1</span>, <span class="code-number">2</span>, <span class="code-number">3</span>], [<span class="code-number">4</span>, <span class="code-number">5</span>, <span class="code-number">6</span>], [<span class="code-number">7</span>, <span class="code-number">8</span>, <span class="code-number">9</span>]]
+<span class="code-keyword">for</span> row <span class="code-keyword">in</span> matrix:
+    <span class="code-keyword">for</span> element <span class="code-keyword">in</span> row:
+        <span class="code-keyword">print</span>(element, end=<span class="code-string">" "</span>)
+    <span class="code-keyword">print</span>()  <span class="code-comment"># New line after each row</span></code></pre>
+            </div>
+            
+            <div class="button-container">
+                <button class="left" onclick="window.location.href='removelistitems.html'">Previous</button>
+                <button class="right" onclick="window.location.href='listcomprehension.html'">Next</button>
+            </div>
+        </div>
+        
+        <div class="right-blank">
+            
+        </div>
+        
+    </div>
+    
+
+<script>
+    
+    function scrollLeft() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    }
+
+    function scrollRight() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    }
+
+    // Enhanced scroll functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.getElementById('menu');
+        const btnLeft = document.querySelector('.scroll-left');
+        const btnRight = document.querySelector('.scroll-right');
+
+        if (!menu || !btnLeft || !btnRight) {
+            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
+            return;
+        }
+
+        const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
+
+        function updateButtons() {
+            const atStart = menu.scrollLeft <= 0;
+            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
+            btnLeft.disabled = atStart;
+            btnRight.disabled = atEnd;
+        }
+
+        btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+
+        btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+
+        menu.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+    });
+</script>
+
+</body>
+</html>

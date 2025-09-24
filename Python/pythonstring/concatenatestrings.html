@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Concatenate Strings</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../Html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+        <div class="nav-brand">
+            <a href="../../index.html" class="logo">
+                <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <div class="nav-item">
+                <span>Tutorials</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>References</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Exercises</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Certificates</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search ..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+
+    <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorial-menu" id="menu">
+            <a href="../../Html.html" class="tutorial-item">HTML</a>
+            <a href="../../cssfolder/css.html" class="tutorial-item">CSS</a>
+            <a href="../../cssfolder/Javascript/jstutorial.html" class="tutorial-item">JAVASCRIPT</a>
+            <a href="../../SQL/Sqlhome.html" class="tutorial-item">SQL</a>
+            <a href="../pythonhome.html" class="tutorial-item active">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="#" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+            <a href="#" class="tutorial-item">PANDAS</a>
+            <a href="#" class="tutorial-item">Node js</a>
+            <a href="#" class="tutorial-item">DSA</a>
+            <a href="#" class="tutorial-item">TYPESCRIPT</a>
+            <a href="#" class="tutorial-item">ANGULAR</a>
+            <a href="#" class="tutorial-item">ANGULAR JS</a>
+            <a href="#" class="tutorial-item">GIT</a>
+            <a href="#" class="tutorial-item">POSTGRESQL</a>
+            <a href="#" class="tutorial-item">MONGODB</a>
+            <a href="#" class="tutorial-item">ASP</a>
+            <a href="#" class="tutorial-item">AI</a>
+            <a href="#" class="tutorial-item">R</a>
+            <a href="#" class="tutorial-item">GO</a>
+            <a href="#" class="tutorial-item">KOTLIN</a>
+            <a href="#" class="tutorial-item">SAAS</a>
+            <a href="#" class="tutorial-item">VUE</a>
+            <a href="#" class="tutorial-item">GEN AI</a>
+            <a href="#" class="tutorial-item">SCIPY</a>
+            <a href="#" class="tutorial-item">CYBER SECURITY</a>
+            <a href="#" class="tutorial-item">DATA SCIENCE</a>
+            <a href="#" class="tutorial-item">INTRO TO PROGRAMMING</a>
+            <a href="#" class="tutorial-item">Rush</a>
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+    </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidenavbar">
+            <h2>Python Strings</h2>
+            <a href="pythonstrings.html">Python Strings</a>
+            <a href="slicingstrings.html">Slicing Strings</a>
+            <a href="modifystrings.html">Modify Strings</a>
+            <a href="concatenatestrings.html" class="active">Concatenate Strings</a>
+            <a href="formatstrings.html">Format Strings</a>
+            <a href="escapecharacters.html">Escape Characters</a>
+            <a href="stringmethods.html">String Methods</a>
+            <a href="stringexercises.html">String Exercises</a>
+        </div>
+        
+        <div class="main-content">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > 
+                <a href="../pythonhome.html">Python Tutorial</a> > 
+                <a href="#">Python Strings</a> > 
+                <span>Concatenate Strings</span>
+            </div>
+            <h1>Python Concatenate Strings</h1>
+            <h2>String Concatenation</h2>
+            <p>To concatenate, or combine, two strings you can use the + operator.</p>
+            
+            <div class="code-example">
+                <pre><code>a = <span class="code-string">"Hello"</span>
+b = <span class="code-string">"World"</span>
+c = a + b
+<span class="code-keyword">print</span>(c)</code></pre>
+            </div>
+            
+            <h2>Add a space between them</h2>
+            <p>To add a space between them, add a " ":</p>
+            
+            <div class="code-example">
+                <pre><code>a = <span class="code-string">"Hello"</span>
+b = <span class="code-string">"World"</span>
+c = a + <span class="code-string">" "</span> + b
+<span class="code-keyword">print</span>(c)</code></pre>
+            </div>
+            
+            <h2>String Concatenation with Variables</h2>
+            <p>You can also concatenate strings with variables:</p>
+            
+            <div class="code-example">
+                <pre><code>first_name = <span class="code-string">"John"</span>
+last_name = <span class="code-string">"Doe"</span>
+full_name = first_name + <span class="code-string">" "</span> + last_name
+<span class="code-keyword">print</span>(full_name)</code></pre>
+            </div>
+            
+            <h2>Concatenate Multiple Strings</h2>
+            <p>You can concatenate multiple strings at once:</p>
+            
+            <div class="code-example">
+                <pre><code>greeting = <span class="code-string">"Hello"</span>
+name = <span class="code-string">"Alice"</span>
+message = greeting + <span class="code-string">", "</span> + name + <span class="code-string">"! How are you?"</span>
+<span class="code-keyword">print</span>(message)</code></pre>
+            </div>
+            
+            <h2>String Concatenation with Numbers</h2>
+            <p>To concatenate a string with a number, you need to convert the number to a string first:</p>
+            
+            <div class="code-example">
+                <pre><code>age = <span class="code-number">25</span>
+text = <span class="code-string">"I am "</span> + <span class="code-keyword">str</span>(age) + <span class="code-string">" years old"</span>
+<span class="code-keyword">print</span>(text)</code></pre>
+            </div>
+            
+            <h2>Using the += Operator</h2>
+            <p>You can also use the += operator to concatenate strings:</p>
+            
+            <div class="code-example">
+                <pre><code>message = <span class="code-string">"Hello"</span>
+message += <span class="code-string">" World"</span>
+<span class="code-keyword">print</span>(message)</code></pre>
+            </div>
+            
+            <h2>Concatenate with join() Method</h2>
+            <p>The join() method is an efficient way to concatenate multiple strings:</p>
+            
+            <div class="code-example">
+                <pre><code>words = [<span class="code-string">"Hello"</span>, <span class="code-string">"World"</span>, <span class="code-string">"Python"</span>]
+sentence = <span class="code-string">" "</span>.join(words)
+<span class="code-keyword">print</span>(sentence)</code></pre>
+            </div>
+            
+            <h2>Concatenate with Different Separators</h2>
+            <p>You can use different separators with the join() method:</p>
+            
+            <div class="code-example">
+                <pre><code>words = [<span class="code-string">"apple"</span>, <span class="code-string">"banana"</span>, <span class="code-string">"cherry"</span>]
+
+<span class="code-comment"># Join with comma and space</span>
+result1 = <span class="code-string">", "</span>.join(words)
+<span class="code-keyword">print</span>(result1)
+
+<span class="code-comment"># Join with hyphen</span>
+result2 = <span class="code-string">"-"</span>.join(words)
+<span class="code-keyword">print</span>(result2)
+
+<span class="code-comment"># Join with newline</span>
+result3 = <span class="code-string">"\n"</span>.join(words)
+<span class="code-keyword">print</span>(result3)</code></pre>
+            </div>
+            
+            <div class="button-container">
+                <button class="left" onclick="window.location.href='modifystrings.html'">Previous</button>
+                <button class="right" onclick="window.location.href='formatstrings.html'">Next</button>
+            </div>
+        </div>
+        
+        <div class="right-blank">
+            
+        </div>
+        
+    </div>
+    
+
+<script>
+    
+    function scrollLeft() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    }
+
+    function scrollRight() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    }
+
+    // Enhanced scroll functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.getElementById('menu');
+        const btnLeft = document.querySelector('.scroll-left');
+        const btnRight = document.querySelector('.scroll-right');
+
+        if (!menu || !btnLeft || !btnRight) {
+            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
+            return;
+        }
+
+        const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
+
+        function updateButtons() {
+            const atStart = menu.scrollLeft <= 0;
+            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
+            btnLeft.disabled = atStart;
+            btnRight.disabled = atEnd;
+        }
+
+        btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+
+        btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+
+        menu.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+    });
+</script>
+
+</body>
+</html>

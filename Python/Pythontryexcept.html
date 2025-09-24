@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Try...Except - W3School Clone</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python Try...Except</h1>
+        <p>Exception handling allows you to handle errors gracefully and prevent your program from crashing.</p>
+        
+        <h2>Basic Try...Except</h2>
+        <div class="code-block">
+            <pre><code>try:
+    print(x)
+except:
+    print("An exception occurred")</code></pre>
+        </div>
+        
+        <h2>Handle Specific Exceptions</h2>
+        <div class="code-block">
+            <pre><code>try:
+    print(x)
+except NameError:
+    print("Variable x is not defined")
+except:
+    print("Something else went wrong")</code></pre>
+        </div>
+        
+        <h2>Try...Except...Else</h2>
+        <div class="code-block">
+            <pre><code>try:
+    print("Hello")
+except:
+    print("Something went wrong")
+else:
+    print("Nothing went wrong")</code></pre>
+        </div>
+        
+        <h2>Try...Except...Finally</h2>
+        <div class="code-block">
+            <pre><code>try:
+    print(x)
+except:
+    print("Something went wrong")
+finally:
+    print("The 'try except' is finished")</code></pre>
+        </div>
+        
+        <h2>Raise an Exception</h2>
+        <div class="code-block">
+            <pre><code># Raise an exception
+x = -1
+
+if x < 0:
+    raise Exception("Sorry, no numbers below zero")
+
+# Raise a specific exception
+if x < 0:
+    raise ValueError("Sorry, no numbers below zero")</code></pre>
+        </div>
+        
+        <h2>Common Exception Types</h2>
+        <ul>
+            <li><strong>NameError:</strong> Variable is not defined</li>
+            <li><strong>TypeError:</strong> Wrong data type</li>
+            <li><strong>ValueError:</strong> Wrong value</li>
+            <li><strong>IndexError:</strong> List index out of range</li>
+            <li><strong>KeyError:</strong> Dictionary key not found</li>
+            <li><strong>FileNotFoundError:</strong> File does not exist</li>
+            <li><strong>ZeroDivisionError:</strong> Division by zero</li>
+        </ul>
+        
+        <h2>Handle Multiple Exceptions</h2>
+        <div class="code-block">
+            <pre><code>try:
+    x = int("not a number")
+    y = 10 / 0
+except (ValueError, ZeroDivisionError):
+    print("ValueError or ZeroDivisionError occurred")
+except:
+    print("Some other error occurred")</code></pre>
+        </div>
+        
+        <h2>Get Exception Information</h2>
+        <div class="code-block">
+            <pre><code>try:
+    print(x)
+except Exception as e:
+    print(f"An error occurred: {e}")
+    print(f"Error type: {type(e).__name__}")</code></pre>
+        </div>
+        
+        <h2>Custom Exceptions</h2>
+        <div class="code-block">
+            <pre><code>class CustomError(Exception):
+    pass
+
+def check_value(x):
+    if x < 0:
+        raise CustomError("Value cannot be negative")
+    return x
+
+try:
+    result = check_value(-5)
+except CustomError as e:
+    print(f"Custom error: {e}")</code></pre>
+        </div>
+        
+        <h2>Exception in Functions</h2>
+        <div class="code-block">
+            <pre><code>def divide_numbers(a, b):
+    try:
+        result = a / b
+        return result
+    except ZeroDivisionError:
+        print("Cannot divide by zero")
+        return None
+    except TypeError:
+        print("Both arguments must be numbers")
+        return None
+
+# Test the function
+print(divide_numbers(10, 2))    # 5.0
+print(divide_numbers(10, 0))    # Cannot divide by zero
+print(divide_numbers(10, "2"))  # Both arguments must be numbers</code></pre>
+        </div>
+        
+        <h2>Assert Statement</h2>
+        <div class="code-block">
+            <pre><code># Assert statement for debugging
+x = 5
+assert x > 0, "x must be positive"
+
+# This will raise AssertionError if condition is False
+x = -1
+assert x > 0, "x must be positive"  # AssertionError: x must be positive</code></pre>
+        </div>
+        
+        <h2>Best Practices</h2>
+        <ul>
+            <li>Be specific with exception types</li>
+            <li>Don't use bare except clauses</li>
+            <li>Log exceptions for debugging</li>
+            <li>Clean up resources in finally blocks</li>
+            <li>Don't suppress exceptions unless necessary</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SQL Home</title>
+    <title>SQL ADD Keyword</title>
     <link rel="stylesheet" href="../../index.css">
     <link rel="stylesheet" href="../../Html.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -101,10 +101,10 @@
         <div class="sidenavbar">
             <h2>SQL Tutorial</h2>
             <a href="Sqlhome.html" class="active">SQL Home</a>
-            <a href="sqlintro.html">SQL Intro</a>
-            <a href="sqlsyntax.html">SQL Syntax</a>
-            <a href="sqlselect.html">SQL Select</a>
-            <a href="sqldistinct.html">SQL Select Distinct</a>
+            <a href="#">SQL Intro</a>
+            <a href="#">SQL Syntax</a>
+            <a href="#">SQL Select</a>
+            <a href="#">SQL Select Distinct</a>
             <a href="#">SQL Where</a>
             <a href="#">SQL Order By</a>
             <a href="#">SQL And</a>
@@ -458,37 +458,42 @@
         </div>
        
         <div class="main-content">
-            <h1>SQL Tutorial</h1>
-            <h2>Learn SQL</h2>
-            <p>SQL is a standard language for storing, manipulating and retrieving data in databases.</p>
-            <p>Our SQL tutorial will teach you how to use SQL in: MySQL, SQL Server, MS Access, Oracle, Sybase, Informix, Postgres, and other database systems.</p>
-            
-            <h2>What is SQL?</h2>
-            <ul>
-                <li>SQL stands for Structured Query Language</li>
-                <li>SQL lets you access and manipulate databases</li>
-                <li>SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987</li>
-            </ul>
-            
-            <h2>What Can SQL do?</h2>
-            <ul>
-                <li>SQL can execute queries against a database</li>
-                <li>SQL can retrieve data from a database</li>
-                <li>SQL can insert records in a database</li>
-                <li>SQL can update records in a database</li>
-                <li>SQL can delete records from a database</li>
-                <li>SQL can create new databases</li>
-                <li>SQL can create new tables in a database</li>
-                <li>SQL can create stored procedures in a database</li>
-                <li>SQL can create views in a database</li>
-                <li>SQL can set permissions on tables, procedures, and views</li>
-            </ul>
-            
-            <h2>SQL Example</h2>
-            <p>Let's look at a simple SQL example:</p>
-            <div class="code-example">
-                <pre><code><span class="code-keyword">SELECT</span> <span class="code-operator">*</span> <span class="code-keyword">FROM</span> <span class="code-table">Customers</span><span class="code-semicolon">;</span></code></pre>
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > 
+                <a href="../Sqlhome.html">SQL Tutorial</a> > 
+                <a href="#">SQL Keywords</a> > 
+                <span>ADD</span>
             </div>
+            <h1>SQL ADD Keyword</h1>
+            <h2>Definition</h2>
+            <p>The <code>ADD</code> keyword is used to add a column to an existing table in SQL.</p>
+            
+            <h2>Syntax</h2>
+            <div class="code-example">
+                <pre><code><span class="code-keyword">ALTER TABLE</span> <span class="code-table">table_name</span>
+<span class="code-keyword">ADD</span> <span class="code-table">column_name</span> <span class="code-table">datatype</span><span class="code-semicolon">;</span></code></pre>
+            </div>
+            
+            <h2>Examples</h2>
+            <h3>Add a single column:</h3>
+            <div class="code-example">
+                <pre><code><span class="code-keyword">ALTER TABLE</span> <span class="code-table">Customers</span>
+<span class="code-keyword">ADD</span> <span class="code-table">Email</span> <span class="code-table">VARCHAR</span>(<span class="code-number">255</span>)<span class="code-semicolon">;</span></code></pre>
+            </div>
+            
+            <h3>Add multiple columns:</h3>
+            <div class="code-example">
+                <pre><code><span class="code-keyword">ALTER TABLE</span> <span class="code-table">Customers</span>
+<span class="code-keyword">ADD</span> <span class="code-table">Phone</span> <span class="code-table">VARCHAR</span>(<span class="code-number">20</span>),
+<span class="code-keyword">ADD</span> <span class="code-table">Address</span> <span class="code-table">TEXT</span><span class="code-semicolon">;</span></code></pre>
+            </div>
+            
+            <h2>Related Keywords</h2>
+            <ul>
+                <li><a href="Alter.html">ALTER</a> - Used with ADD to modify table structure</li>
+                <li><a href="Column.html">COLUMN</a> - Specifies the column to be added</li>
+                <li><a href="Table.html">TABLE</a> - The table being modified</li>
+            </ul>
             
             <div class="button-container">
                 <button class="left">Previous</button>
@@ -576,6 +581,5 @@
             }
         }
 </script>
-
 </body>
 </html>

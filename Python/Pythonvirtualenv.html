@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python VirtualEnv - W3School Clone</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python VirtualEnv</h1>
+        <p>Virtual environments allow you to create isolated Python environments for different projects.</p>
+        
+        <h2>What is a Virtual Environment?</h2>
+        <p>A virtual environment is an isolated Python environment that allows you to install packages without affecting the system Python installation.</p>
+        
+        <h2>Create Virtual Environment</h2>
+        <div class="code-block">
+            <pre><code># Create virtual environment
+python -m venv myenv
+
+# Or specify Python version
+python3 -m venv myenv</code></pre>
+        </div>
+        
+        <h2>Activate Virtual Environment</h2>
+        <div class="code-block">
+            <pre><code># Windows
+myenv\Scripts\activate
+
+# Linux/Mac
+source myenv/bin/activate</code></pre>
+        </div>
+        
+        <h2>Deactivate Virtual Environment</h2>
+        <div class="code-block">
+            <pre><code># Deactivate (works on all platforms)
+deactivate</code></pre>
+        </div>
+        
+        <h2>Install Packages in Virtual Environment</h2>
+        <div class="code-block">
+            <pre><code># Activate virtual environment first
+# Then install packages
+pip install requests
+pip install numpy
+pip install pandas</code></pre>
+        </div>
+        
+        <h2>Create Requirements File</h2>
+        <div class="code-block">
+            <pre><code># Generate requirements.txt
+pip freeze > requirements.txt
+
+# Install from requirements.txt
+pip install -r requirements.txt</code></pre>
+        </div>
+        
+        <h2>Virtual Environment with Different Python Version</h2>
+        <div class="code-block">
+            <pre><code># Create virtual environment with specific Python version
+python3.9 -m venv myenv39
+python3.10 -m venv myenv310</code></pre>
+        </div>
+        
+        <h2>Virtual Environment Best Practices</h2>
+        <ul>
+            <li>Always use virtual environments for projects</li>
+            <li>Don't commit virtual environment to version control</li>
+            <li>Use descriptive names for virtual environments</li>
+            <li>Keep requirements.txt up to date</li>
+            <li>Use different virtual environments for different projects</li>
+        </ul>
+        
+        <h2>Virtual Environment Commands</h2>
+        <div class="code-block">
+            <pre><code># List virtual environments
+conda env list
+
+# Create virtual environment with conda
+conda create -n myenv python=3.9
+
+# Activate conda environment
+conda activate myenv
+
+# Deactivate conda environment
+conda deactivate</code></pre>
+        </div>
+        
+        <h2>Virtual Environment Structure</h2>
+        <div class="code-block">
+            <pre><code>myenv/
+├── Scripts/          # Windows activation scripts
+├── bin/              # Linux/Mac activation scripts
+├── include/          # Header files
+├── lib/              # Python packages
+└── pyvenv.cfg        # Configuration file</code></pre>
+        </div>
+        
+        <h2>Virtual Environment with Poetry</h2>
+        <div class="code-block">
+            <pre><code># Install Poetry
+pip install poetry
+
+# Create new project
+poetry new myproject
+
+# Install dependencies
+poetry install
+
+# Add new dependency
+poetry add requests
+
+# Activate virtual environment
+poetry shell</code></pre>
+        </div>
+        
+        <h2>Virtual Environment with Pipenv</h2>
+        <div class="code-block">
+            <pre><code># Install Pipenv
+pip install pipenv
+
+# Create Pipfile
+pipenv install
+
+# Install packages
+pipenv install requests
+
+# Activate virtual environment
+pipenv shell</code></pre>
+        </div>
+    </div>
+</body>
+</html>

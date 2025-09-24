@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Format Strings</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../Html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+        <div class="nav-brand">
+            <a href="../../index.html" class="logo">
+                <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <div class="nav-item">
+                <span>Tutorials</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>References</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Exercises</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Certificates</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search ..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+
+    <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorial-menu" id="menu">
+            <a href="../../Html.html" class="tutorial-item">HTML</a>
+            <a href="../../cssfolder/css.html" class="tutorial-item">CSS</a>
+            <a href="../../cssfolder/Javascript/jstutorial.html" class="tutorial-item">JAVASCRIPT</a>
+            <a href="../../SQL/Sqlhome.html" class="tutorial-item">SQL</a>
+            <a href="../pythonhome.html" class="tutorial-item active">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="#" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+            <a href="#" class="tutorial-item">PANDAS</a>
+            <a href="#" class="tutorial-item">Node js</a>
+            <a href="#" class="tutorial-item">DSA</a>
+            <a href="#" class="tutorial-item">TYPESCRIPT</a>
+            <a href="#" class="tutorial-item">ANGULAR</a>
+            <a href="#" class="tutorial-item">ANGULAR JS</a>
+            <a href="#" class="tutorial-item">GIT</a>
+            <a href="#" class="tutorial-item">POSTGRESQL</a>
+            <a href="#" class="tutorial-item">MONGODB</a>
+            <a href="#" class="tutorial-item">ASP</a>
+            <a href="#" class="tutorial-item">AI</a>
+            <a href="#" class="tutorial-item">R</a>
+            <a href="#" class="tutorial-item">GO</a>
+            <a href="#" class="tutorial-item">KOTLIN</a>
+            <a href="#" class="tutorial-item">SAAS</a>
+            <a href="#" class="tutorial-item">VUE</a>
+            <a href="#" class="tutorial-item">GEN AI</a>
+            <a href="#" class="tutorial-item">SCIPY</a>
+            <a href="#" class="tutorial-item">CYBER SECURITY</a>
+            <a href="#" class="tutorial-item">DATA SCIENCE</a>
+            <a href="#" class="tutorial-item">INTRO TO PROGRAMMING</a>
+            <a href="#" class="tutorial-item">Rush</a>
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+    </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidenavbar">
+            <h2>Python Strings</h2>
+            <a href="pythonstrings.html">Python Strings</a>
+            <a href="slicingstrings.html">Slicing Strings</a>
+            <a href="modifystrings.html">Modify Strings</a>
+            <a href="concatenatestrings.html">Concatenate Strings</a>
+            <a href="formatstrings.html" class="active">Format Strings</a>
+            <a href="escapecharacters.html">Escape Characters</a>
+            <a href="stringmethods.html">String Methods</a>
+            <a href="stringexercises.html">String Exercises</a>
+        </div>
+        
+        <div class="main-content">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > 
+                <a href="../pythonhome.html">Python Tutorial</a> > 
+                <a href="#">Python Strings</a> > 
+                <span>Format Strings</span>
+            </div>
+            <h1>Python Format Strings</h1>
+            <h2>String Format</h2>
+            <p>As we learned in the Python Variables chapter, we cannot combine strings and numbers like this:</p>
+            
+            <div class="code-example">
+                <pre><code>age = <span class="code-number">36</span>
+txt = <span class="code-string">"My name is John, I am "</span> + age
+<span class="code-keyword">print</span>(txt)</code></pre>
+            </div>
+            
+            <p>But we can combine strings and numbers by using the format() method!</p>
+            <p>The format() method takes the passed arguments, formats them, and places them in the string where the placeholders {} are:</p>
+            
+            <div class="code-example">
+                <pre><code>age = <span class="code-number">36</span>
+txt = <span class="code-string">"My name is John, and I am {}"</span>.format(age)
+<span class="code-keyword">print</span>(txt)</code></pre>
+            </div>
+            
+            <h2>The format() method takes unlimited number of arguments, and are placed into the respective placeholders:</h2>
+            
+            <div class="code-example">
+                <pre><code>quantity = <span class="code-number">3</span>
+itemno = <span class="code-number">567</span>
+price = <span class="code-number">49.95</span>
+myorder = <span class="code-string">"I want {} pieces of item {} for {} dollars."</span>.format(quantity, itemno, price)
+<span class="code-keyword">print</span>(myorder)</code></pre>
+            </div>
+            
+            <h2>You can use index numbers {0} to be sure the arguments are placed in the correct placeholders:</h2>
+            
+            <div class="code-example">
+                <pre><code>quantity = <span class="code-number">3</span>
+itemno = <span class="code-number">567</span>
+price = <span class="code-number">49.95</span>
+myorder = <span class="code-string">"I want to pay {2} dollars for {0} pieces of item {1}."</span>.format(quantity, itemno, price)
+<span class="code-keyword">print</span>(myorder)</code></pre>
+            </div>
+            
+            <h2>Named Indexes</h2>
+            <p>You can also use named indexes by entering a name inside the curly brackets {carname}, but then you must use names when you pass the parameter values txt.format(carname = "Ford"):</p>
+            
+            <div class="code-example">
+                <pre><code>myorder = <span class="code-string">"I have a {carname}, it is a {model}."</span>.format(carname = <span class="code-string">"Ford"</span>, model = <span class="code-string">"Mustang"</span>)
+<span class="code-keyword">print</span>(myorder)</code></pre>
+            </div>
+            
+            <h2>F-String Formatting (Python 3.6+)</h2>
+            <p>F-strings provide a more readable way to format strings:</p>
+            
+            <div class="code-example">
+                <pre><code>name = <span class="code-string">"Alice"</span>
+age = <span class="code-number">25</span>
+message = <span class="code-string">f"My name is {name} and I am {age} years old"</span>
+<span class="code-keyword">print</span>(message)</code></pre>
+            </div>
+            
+            <h2>F-String with Expressions</h2>
+            <p>You can use expressions inside f-strings:</p>
+            
+            <div class="code-example">
+                <pre><code>price = <span class="code-number">19.99</span>
+quantity = <span class="code-number">3</span>
+total = <span class="code-string">f"Total: ${price * quantity:.2f}"</span>
+<span class="code-keyword">print</span>(total)</code></pre>
+            </div>
+            
+            <h2>String Formatting with % Operator</h2>
+            <p>The % operator can also be used for string formatting:</p>
+            
+            <div class="code-example">
+                <pre><code>name = <span class="code-string">"John"</span>
+age = <span class="code-number">36</span>
+txt = <span class="code-string">"My name is %s, and I am %d years old"</span> % (name, age)
+<span class="code-keyword">print</span>(txt)</code></pre>
+            </div>
+            
+            <h2>Formatting Numbers</h2>
+            <p>You can format numbers with specific decimal places:</p>
+            
+            <div class="code-example">
+                <pre><code>number = <span class="code-number">3.14159</span>
+
+<span class="code-comment"># Format to 2 decimal places</span>
+formatted = <span class="code-string">"{:.2f}"</span>.format(number)
+<span class="code-keyword">print</span>(formatted)
+
+<span class="code-comment"># Format with f-string</span>
+formatted_f = <span class="code-string">f"{number:.2f}"</span>
+<span class="code-keyword">print</span>(formatted_f)</code></pre>
+            </div>
+            
+            <div class="button-container">
+                <button class="left" onclick="window.location.href='concatenatestrings.html'">Previous</button>
+                <button class="right" onclick="window.location.href='escapecharacters.html'">Next</button>
+            </div>
+        </div>
+        
+        <div class="right-blank">
+            
+        </div>
+        
+    </div>
+    
+
+<script>
+    
+    function scrollLeft() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    }
+
+    function scrollRight() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    }
+
+    // Enhanced scroll functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.getElementById('menu');
+        const btnLeft = document.querySelector('.scroll-left');
+        const btnRight = document.querySelector('.scroll-right');
+
+        if (!menu || !btnLeft || !btnRight) {
+            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
+            return;
+        }
+
+        const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
+
+        function updateButtons() {
+            const atStart = menu.scrollLeft <= 0;
+            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
+            btnLeft.disabled = atStart;
+            btnRight.disabled = atEnd;
+        }
+
+        btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+
+        btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+
+        menu.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python List Exercises</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../Html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+        <div class="nav-brand">
+            <a href="../../index.html" class="logo">
+                <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <div class="nav-item">
+                <span>Tutorials</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>References</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Exercises</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Certificates</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search ..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+
+    <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorial-menu" id="menu">
+            <a href="../../Html.html" class="tutorial-item">HTML</a>
+            <a href="../../cssfolder/css.html" class="tutorial-item">CSS</a>
+            <a href="../../cssfolder/Javascript/jstutorial.html" class="tutorial-item">JAVASCRIPT</a>
+            <a href="../../SQL/Sqlhome.html" class="tutorial-item">SQL</a>
+            <a href="../pythonhome.html" class="tutorial-item active">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="#" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+            <a href="#" class="tutorial-item">PANDAS</a>
+            <a href="#" class="tutorial-item">Node js</a>
+            <a href="#" class="tutorial-item">DSA</a>
+            <a href="#" class="tutorial-item">TYPESCRIPT</a>
+            <a href="#" class="tutorial-item">ANGULAR</a>
+            <a href="#" class="tutorial-item">ANGULAR JS</a>
+            <a href="#" class="tutorial-item">GIT</a>
+            <a href="#" class="tutorial-item">POSTGRESQL</a>
+            <a href="#" class="tutorial-item">MONGODB</a>
+            <a href="#" class="tutorial-item">ASP</a>
+            <a href="#" class="tutorial-item">AI</a>
+            <a href="#" class="tutorial-item">R</a>
+            <a href="#" class="tutorial-item">GO</a>
+            <a href="#" class="tutorial-item">KOTLIN</a>
+            <a href="#" class="tutorial-item">SAAS</a>
+            <a href="#" class="tutorial-item">VUE</a>
+            <a href="#" class="tutorial-item">GEN AI</a>
+            <a href="#" class="tutorial-item">SCIPY</a>
+            <a href="#" class="tutorial-item">CYBER SECURITY</a>
+            <a href="#" class="tutorial-item">DATA SCIENCE</a>
+            <a href="#" class="tutorial-item">INTRO TO PROGRAMMING</a>
+            <a href="#" class="tutorial-item">Rush</a>
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+    </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidenavbar">
+            <h2>Python Lists</h2>
+            <a href="Pythonlist.html">Python Lists</a>
+            <a href="acesslist.html">Access List Items</a>
+            <a href="changelistitems.html">Change List Items</a>
+            <a href="addlistitems.html">Add List Items</a>
+            <a href="removelistitems.html">Remove List Items</a>
+            <a href="looplists.html">Loop Lists</a>
+            <a href="listcomprehension.html">List Comprehension</a>
+            <a href="sortlists.html">Sort Lists</a>
+            <a href="copylists.html">Copy Lists</a>
+            <a href="joinlists.html">Join Lists</a>
+            <a href="listmethods.html">List Methods</a>
+            <a href="listexercises.html" class="active">List Exercises</a>
+        </div>
+        
+        <div class="main-content">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> > 
+                <a href="../pythonhome.html">Python Tutorial</a> > 
+                <a href="#">Python Lists</a> > 
+                <span>List Exercises</span>
+            </div>
+            <h1>Python List Exercises</h1>
+            <p>Test your Python list skills with these exercises!</p>
+            
+            <h2>Exercise 1: Create a List</h2>
+            <p>Create a list called <code>fruits</code> that contains the following items: "apple", "banana", "cherry".</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['apple', 'banana', 'cherry']</p>
+            </div>
+            
+            <h2>Exercise 2: Access List Items</h2>
+            <p>Print the second item in the fruits list.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> banana</p>
+            </div>
+            
+            <h2>Exercise 3: Change List Items</h2>
+            <p>Change the value "banana" to "blackcurrant".</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['apple', 'blackcurrant', 'cherry']</p>
+            </div>
+            
+            <h2>Exercise 4: Add List Items</h2>
+            <p>Use the append() method to add "orange" to the fruits list.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['apple', 'banana', 'cherry', 'orange']</p>
+            </div>
+            
+            <h2>Exercise 5: Remove List Items</h2>
+            <p>Use the remove() method to remove "banana" from the fruits list.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['apple', 'cherry']</p>
+            </div>
+            
+            <h2>Exercise 6: Loop Through a List</h2>
+            <p>Loop through the fruits list and print each item.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong><br>
+                apple<br>
+                banana<br>
+                cherry</p>
+            </div>
+            
+            <h2>Exercise 7: List Comprehension</h2>
+            <p>Use list comprehension to create a new list containing only the fruits with the letter "a" in the name.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['apple', 'banana']</p>
+            </div>
+            
+            <h2>Exercise 8: Sort Lists</h2>
+            <p>Sort the fruits list alphabetically.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['apple', 'banana', 'cherry']</p>
+            </div>
+            
+            <h2>Exercise 9: Copy Lists</h2>
+            <p>Make a copy of the fruits list using the copy() method.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['apple', 'banana', 'cherry']</p>
+            </div>
+            
+            <h2>Exercise 10: Join Lists</h2>
+            <p>Join two lists: fruits = ["apple", "banana"] and vegetables = ["carrot", "potato"].</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['apple', 'banana', 'carrot', 'potato']</p>
+            </div>
+            
+            <h2>Exercise 11: Count Items</h2>
+            <p>Count how many times "apple" appears in the list: ["apple", "banana", "apple", "cherry", "apple"].</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> 3</p>
+            </div>
+            
+            <h2>Exercise 12: Find Index</h2>
+            <p>Find the index of "cherry" in the fruits list.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> 2</p>
+            </div>
+            
+            <h2>Exercise 13: Insert Item</h2>
+            <p>Insert "orange" at position 1 in the fruits list.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['apple', 'orange', 'banana', 'cherry']</p>
+            </div>
+            
+            <h2>Exercise 14: Reverse List</h2>
+            <p>Reverse the order of the fruits list.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['cherry', 'banana', 'apple']</p>
+            </div>
+            
+            <h2>Exercise 15: Clear List</h2>
+            <p>Clear all items from the fruits list.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> []</p>
+            </div>
+            
+            <h2>Exercise 16: List Length</h2>
+            <p>Print the number of items in the fruits list.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> 3</p>
+            </div>
+            
+            <h2>Exercise 17: Check if Item Exists</h2>
+            <p>Check if "apple" is present in the fruits list.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> True</p>
+            </div>
+            
+            <h2>Exercise 18: List Slicing</h2>
+            <p>Print the first two items from the fruits list using slicing.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['apple', 'banana']</p>
+            </div>
+            
+            <h2>Exercise 19: Negative Indexing</h2>
+            <p>Print the last item in the fruits list using negative indexing.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> cherry</p>
+            </div>
+            
+            <h2>Exercise 20: Extend List</h2>
+            <p>Add the items from list2 to list1: list1 = ["a", "b"], list2 = [1, 2].</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['a', 'b', 1, 2]</p>
+            </div>
+            
+            <h2>Exercise 21: Pop Item</h2>
+            <p>Remove the last item from the fruits list using pop().</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> ['apple', 'banana']</p>
+            </div>
+            
+            <h2>Exercise 22: List with Range</h2>
+            <p>Create a list containing numbers from 1 to 5 using range().</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> [1, 2, 3, 4, 5]</p>
+            </div>
+            
+            <h2>Exercise 23: Filter List</h2>
+            <p>Create a new list containing only even numbers from [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> [2, 4, 6, 8, 10]</p>
+            </div>
+            
+            <h2>Exercise 24: Square Numbers</h2>
+            <p>Create a list containing the squares of numbers from 1 to 5.</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> [1, 4, 9, 16, 25]</p>
+            </div>
+            
+            <h2>Exercise 25: Maximum and Minimum</h2>
+            <p>Find the maximum and minimum values in the list [5, 2, 8, 1, 9, 3].</p>
+            <div class="exercise-box">
+                <p><strong>Expected Output:</strong> Max: 9, Min: 1</p>
+            </div>
+            
+            <div class="button-container">
+                <button class="left" onclick="window.location.href='listmethods.html'">Previous</button>
+                <button class="right" onclick="window.location.href='../pythonhome.html'">Back to Python Home</button>
+            </div>
+        </div>
+        
+        <div class="right-blank">
+            
+        </div>
+        
+    </div>
+    
+
+<script>
+    
+    function scrollLeft() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    }
+
+    function scrollRight() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    }
+
+    // Enhanced scroll functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.getElementById('menu');
+        const btnLeft = document.querySelector('.scroll-left');
+        const btnRight = document.querySelector('.scroll-right');
+
+        if (!menu || !btnLeft || !btnRight) {
+            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
+            return;
+        }
+
+        const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
+
+        function updateButtons() {
+            const atStart = menu.scrollLeft <= 0;
+            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
+            btnLeft.disabled = atStart;
+            btnRight.disabled = atEnd;
+        }
+
+        btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+
+        btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+
+        menu.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+    });
+</script>
+
+</body>
+</html>

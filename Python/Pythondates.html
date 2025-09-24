@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Dates - W3School Clone</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python Dates</h1>
+        <p>Python has a built-in module called <code>datetime</code> to work with dates and times.</p>
+        
+        <h2>Import the datetime Module</h2>
+        <div class="code-block">
+            <pre><code>import datetime</code></pre>
+        </div>
+        
+        <h2>Get Current Date and Time</h2>
+        <div class="code-block">
+            <pre><code>import datetime
+
+x = datetime.datetime.now()
+print(x)  # 2023-12-07 14:30:25.123456</code></pre>
+        </div>
+        
+        <h2>Date Object</h2>
+        <div class="code-block">
+            <pre><code>import datetime
+
+# Create a date object
+x = datetime.datetime(2023, 12, 7)
+print(x)  # 2023-12-07 00:00:00</code></pre>
+        </div>
+        
+        <h2>strftime() Method</h2>
+        <p>The <code>strftime()</code> method formats date objects into readable strings.</p>
+        <div class="code-block">
+            <pre><code>import datetime
+
+x = datetime.datetime.now()
+
+# Format codes
+print(x.strftime("%Y"))     # 2023 (4-digit year)
+print(x.strftime("%y"))     # 23 (2-digit year)
+print(x.strftime("%m"))     # 12 (month as number)
+print(x.strftime("%B"))     # December (month name)
+print(x.strftime("%b"))     # Dec (month abbreviation)
+print(x.strftime("%d"))     # 07 (day of month)
+print(x.strftime("%A"))     # Thursday (weekday name)
+print(x.strftime("%a"))     # Thu (weekday abbreviation)
+print(x.strftime("%H"))     # 14 (hour 24-hour format)
+print(x.strftime("%I"))     # 02 (hour 12-hour format)
+print(x.strftime("%M"))     # 30 (minute)
+print(x.strftime("%S"))     # 25 (second)
+print(x.strftime("%p"))     # PM (AM/PM)</code></pre>
+        </div>
+        
+        <h2>Common Format Codes</h2>
+        <table>
+            <tr>
+                <th>Code</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>%Y</td>
+                <td>4-digit year</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>%y</td>
+                <td>2-digit year</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>%m</td>
+                <td>Month as number</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>%B</td>
+                <td>Full month name</td>
+                <td>December</td>
+            </tr>
+            <tr>
+                <td>%b</td>
+                <td>Month abbreviation</td>
+                <td>Dec</td>
+            </tr>
+            <tr>
+                <td>%d</td>
+                <td>Day of month</td>
+                <td>07</td>
+            </tr>
+            <tr>
+                <td>%A</td>
+                <td>Full weekday name</td>
+                <td>Thursday</td>
+            </tr>
+            <tr>
+                <td>%a</td>
+                <td>Weekday abbreviation</td>
+                <td>Thu</td>
+            </tr>
+        </table>
+        
+        <h2>Date Arithmetic</h2>
+        <div class="code-block">
+            <pre><code>import datetime
+
+# Current date
+today = datetime.date.today()
+print(f"Today: {today}")
+
+# Add days
+future_date = today + datetime.timedelta(days=30)
+print(f"30 days from now: {future_date}")
+
+# Subtract days
+past_date = today - datetime.timedelta(days=30)
+print(f"30 days ago: {past_date}")
+
+# Add weeks
+future_week = today + datetime.timedelta(weeks=2)
+print(f"2 weeks from now: {future_week}")</code></pre>
+        </div>
+        
+        <h2>Compare Dates</h2>
+        <div class="code-block">
+            <pre><code>import datetime
+
+date1 = datetime.date(2023, 12, 7)
+date2 = datetime.date(2023, 12, 10)
+
+if date1 < date2:
+    print("date1 is earlier than date2")
+elif date1 > date2:
+    print("date1 is later than date2")
+else:
+    print("date1 and date2 are the same")</code></pre>
+        </div>
+        
+        <h2>Time Objects</h2>
+        <div class="code-block">
+            <pre><code>import datetime
+
+# Create a time object
+time_obj = datetime.time(14, 30, 25)
+print(time_obj)  # 14:30:25
+
+# Access time components
+print(time_obj.hour)    # 14
+print(time_obj.minute)  # 30
+print(time_obj.second)  # 25</code></pre>
+        </div>
+        
+        <h2>Timezone</h2>
+        <div class="code-block">
+            <pre><code>import datetime
+import pytz
+
+# Get current time in different timezones
+utc_now = datetime.datetime.now(pytz.UTC)
+print(f"UTC: {utc_now}")
+
+# Convert to different timezone
+ny_tz = pytz.timezone('America/New_York')
+ny_time = utc_now.astimezone(ny_tz)
+print(f"New York: {ny_time}")</code></pre>
+        </div>
+        
+        <h2>Parse Date from String</h2>
+        <div class="code-block">
+            <pre><code>from datetime import datetime
+
+# Parse date from string
+date_string = "2023-12-07 14:30:25"
+parsed_date = datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S")
+print(parsed_date)  # 2023-12-07 14:30:25</code></pre>
+        </div>
+    </div>
+</body>
+</html>

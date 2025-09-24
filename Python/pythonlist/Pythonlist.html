@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python list</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../Html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+        <div class="nav-brand">
+            <a href="../index.html" class="logo">
+                <img src="https://logospng.org/download/w3schools/w3schools-4096.png" alt="W3Schools Logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <div class="nav-item">
+                <span>Tutorials</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>References</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Exercises</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="nav-item">
+                <span>Certificates</span>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search ..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+
+    <nav class="nav-tutorials">
+        <button class="scroll-btn scroll-left" onclick="scrollLeft()">&#10094;</button>
+        <div class="tutorial-menu" id="menu">
+            <a href="../Html.html" class="tutorial-item">HTML</a>
+            <a href="../cssfolder/css.html" class="tutorial-item">CSS</a>
+            <a href="../cssfolder/Javascript/jstutorial.html" class="tutorial-item">JAVASCRIPT</a>
+            <a href="../SQL/Sqlhome.html" class="tutorial-item">SQL</a>
+            <a href="pythonhome.html" class="tutorial-item active">PYTHON</a>
+            <a href="#" class="tutorial-item">JAVA</a>
+            <a href="#" class="tutorial-item">PHP</a>
+            <a href="#" class="tutorial-item">HOW TO</a>
+            <a href="#" class="tutorial-item">W3.CSS</a>
+            <a href="#" class="tutorial-item">C</a>
+            <a href="#" class="tutorial-item">C++</a>
+            <a href="#" class="tutorial-item">C#</a>
+            <a href="#" class="tutorial-item">BOOTSTRAP</a>
+            <a href="#" class="tutorial-item">REACT</a>
+            <a href="#" class="tutorial-item">MYSQL</a>
+            <a href="#" class="tutorial-item">JQUERY</a>
+            <a href="#" class="tutorial-item">EXCEL</a>
+            <a href="#" class="tutorial-item">XML</a>
+            <a href="#" class="tutorial-item">DJANGO</a>
+            <a href="#" class="tutorial-item">NUMPY</a>
+            <a href="#" class="tutorial-item">PANDAS</a>
+            <a href="#" class="tutorial-item">Node js</a>
+            <a href="#" class="tutorial-item">DSA</a>
+            <a href="#" class="tutorial-item">TYPESCRIPT</a>
+            <a href="#" class="tutorial-item">ANGULAR</a>
+            <a href="#" class="tutorial-item">ANGULAR JS</a>
+            <a href="#" class="tutorial-item">GIT</a>
+            <a href="#" class="tutorial-item">POSTGRESQL</a>
+            <a href="#" class="tutorial-item">MONGODB</a>
+            <a href="#" class="tutorial-item">ASP</a>
+            <a href="#" class="tutorial-item">AI</a>
+            <a href="#" class="tutorial-item">R</a>
+            <a href="#" class="tutorial-item">GO</a>
+            <a href="#" class="tutorial-item">KOTLIN</a>
+            <a href="#" class="tutorial-item">SAAS</a>
+            <a href="#" class="tutorial-item">VUE</a>
+            <a href="#" class="tutorial-item">GEN AI</a>
+            <a href="#" class="tutorial-item">SCIPY</a>
+            <a href="#" class="tutorial-item">CYBER SECURITY</a>
+            <a href="#" class="tutorial-item">DATA SCIENCE</a>
+            <a href="#" class="tutorial-item">INTRO TO PROGRAMMING</a>
+            <a href="#" class="tutorial-item">Rush</a>
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollRight()">&#10095;</button>
+    </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidenavbar">
+            <h2>Python Tutorial</h2>
+            <a href="pythonhome.html" class="active">Python Home</a>
+            <a href="pythonintro.html">Python Intro</a>
+            <a href="pythoninstall.html">Python Install</a>
+            <a href="pythonsyntax.html">Python Syntax</a>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">Python variables ▼</button>
+                <div class="dropdown-content">
+                    <a href="pythonvariables.html">Python Variables</a>
+                    <a href="#">variables name</a>
+                    <a href="#">Assign multiple values</a>
+                    <a href="#">output variable</a>
+                    <a href="#">Global variable</a>
+                    <a href="#">variable exercises</a>
+                </div>
+            </div>
+            <a href="pythoncomments.html">Python Comments</a>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">python strings ▼</button>
+                <div class="dropdown-content">
+                    <a href="pythonstring.html">python strings</a>
+                    <a href="#">slicing strings</a>
+                    <a href="#">modify string</a>
+                    <a href="#">concatenate string</a>
+                    <a href="#">Format strings</a>
+                    <a href="#">Escape characters</a>
+                    <a href="#">string methods</a>
+                    <a href="#">string exercises</a>
+                </div>
+            </div>
+            <a href="pythonnumbers.html">Python Numbers</a>
+            <a href="pythoncasting.html">Python Casting</a>
+            <a href="pythonbooleans.html">Python Booleans</a>
+            <a href="pythonoperators.html">Python Operators</a>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">python lists ▼</button>
+                <div class="dropdown-content">
+                    <a href="pythonlists.html">python lists</a>
+                    <a href="#">access list items</a>
+                    <a href="#">change list items</a>
+                    <a href="#">Add list items</a>
+                    <a href="#">Remove list items</a>
+                    <a href="#">Loops list</a>
+                    <a href="#">List comprehension</a>
+                    <a href="#">sort list</a>
+                    <a href="#">copy list</a>
+                    <a href="#">join list</a>
+                    <a href="#">list methods</a>
+                    <a href="#">List exercises</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">python tuples ▼</button>
+                <div class="dropdown-content">
+                    <a href="pythontuples.html">python tuples</a>
+                    <a href="#">access tuple items</a>
+                    <a href="#">update tuple</a>
+                    <a href="#">unpack tuple</a>
+                    <a href="#">Remove tuple items</a>
+                    <a href="#">Loops tuple</a>
+                    <a href="#">join tuple</a>
+                    <a href="#">tuple methods</a>
+                    <a href="#">Tuple exercises</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">python sets ▼</button>
+                <div class="dropdown-content">
+                    <a href="pythonsets.html">python sets</a>
+                    <a href="#">access set items</a>
+                    <a href="#">add set items</a>
+                    <a href="#">remove set items</a>
+                    <a href="#">join set</a>
+                    <a href="#">Loops set</a>
+                    <a href="#">set methods</a>
+                    <a href="#">Set exercises</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">python dictionaries ▼</button>
+                <div class="dropdown-content">
+                    <a href="pythondictionaries.html">python dictionaries</a>
+                    <a href="#">access dictionary items</a>
+                    <a href="#">change dictionary items</a>
+                    <a href="#">add dictionary items</a>
+                    <a href="#">remove dictionary items</a>
+                    <a href="#">Loops dictionary</a>
+                    <a href="#">copy dictionary</a>
+                    <a href="#">nested dictionary</a>
+                    <a href="#">dictionary methods</a>
+                    <a href="#">Dictionary exercises</a>
+                </div>
+            </div>
+            <a href="pythonifelse.html">Python If...Else</a>
+            <a href="#">python Match</a>
+            <a href="pythonwhile.html">Python While Loops</a>
+            <a href="pythonfor.html">Python For Loops</a>
+            <a href="pythonfunctions.html">Python Functions</a>
+            <a href="#">python Decorators</a>
+            <a href="#">python Range</a>
+            <a href="pythonlambda.html">Python Lambda</a>
+            <a href="pythonarrays.html">Python Arrays</a>
+            <a href="#">oops</a>
+            <a href="pythonclasses.html">Python Classes</a>
+            <a href="pythoninheritance.html">Python Inheritance</a>
+            <a href="#">python Iterators</a>
+            <a href="#">python polymorphism</a>
+            <a href="#">python scope</a>
+            <a href="pythonmodules.html">Python module</a>
+            <a href="pythondatetime.html">Python Datetime</a>
+            <a href="pythonjson.html">Python JSON</a>
+            <a href="pythonregex.html">Python RegEx</a>
+            <a href="pythonpip.html">Python PIP</a>
+            <a href="pythontry.html">Python Try...Except</a>
+            <a href="pythonuserinput.html">Python User Input</a>
+            <a href="pythonstringformatting.html">Python String Formatting</a>
+             <a href="#">python None</a>
+             <a href="#">python user Input</a>
+             <a href="#">python virtualEnv</a>
+             
+             <h2>File Handling</h2>
+             <a href="pythonfilehandling.html">Python File Handling</a>
+             <a href="pythonreadfiles.html">Python Read Files</a>
+             <a href="pythonwritefiles.html">Python Write/Create Files</a>
+             <a href="pythondeletefiles.html">Python Delete Files</a>
+             
+             <h2>Python Modules</h2>
+             <a href="#">NumPy Tutorial</a>
+             <a href="#">Pandas Tutorial</a>
+             <a href="#">SciPy Tutorial</a>
+             <a href="#">Django Tutorial</a>
+             
+             <h2>Python Matplotlib</h2>
+             <a href="#">Matplotlib Intro</a>
+             <a href="#">Matplotlib Get Started</a>
+             <a href="#">Matplotlib Pyplot</a>
+             <a href="#">Matplotlib Plotting</a>
+             <a href="#">Matplotlib Markers</a>
+             <a href="#">Matplotlib Line</a>
+             <a href="#">Matplotlib Labels</a>
+             <a href="#">Matplotlib Grid</a>
+             <a href="#">Matplotlib Subplot</a>
+             <a href="#">Matplotlib Scatter</a>
+             <a href="#">Matplotlib Bars</a>
+             <a href="#">Matplotlib Histograms</a>
+             <a href="#">Matplotlib Pie Charts</a>
+             
+             <h2>Machine Learning</h2>
+             <a href="#">Getting Started</a>
+             <a href="#">Mean Median Mode</a>
+             <a href="#">Standard Deviation</a>
+             <a href="#">Percentile</a>
+             <a href="#">Data Distribution</a>
+             <a href="#">Normal Data Distribution</a>
+             <a href="#">Scatter Plot</a>
+             <a href="#">Linear Regression</a>
+             <a href="#">Polynomial Regression</a>
+             <a href="#">Multiple Regression</a>
+             <a href="#">Scale</a>
+             <a href="#">Train/Test</a>
+             <a href="#">Decision Tree</a>
+             <a href="#">Confusion Matrix</a>
+             <a href="#">Hierarchical Clustering</a>
+             <a href="#">Logistic Regression</a>
+             <a href="#">Grid Search</a>
+             <a href="#">Categorical Data</a>
+             <a href="#">K-means</a>
+             <a href="#">Bootstrap Aggregation</a>
+             <a href="#">Cross Validation</a>
+             <a href="#">AUC - ROC Curve</a>
+             <a href="#">K-nearest neighbors</a>
+             
+             <h2>Python DSA</h2>
+             <a href="#">Python DSA</a>
+             <a href="#">Lists and Arrays</a>
+             <a href="#">Stacks</a>
+             <a href="#">Queues</a>
+             <a href="#">Linked Lists</a>
+             <a href="#">Hash Tables</a>
+             <a href="#">Trees</a>
+             <a href="#">Binary Trees</a>
+             <a href="#">Binary Search Trees</a>
+             <a href="#">AVL Trees</a>
+             <a href="#">Graphs</a>
+             <a href="#">Linear Search</a>
+             <a href="#">Binary Search</a>
+             <a href="#">Bubble Sort</a>
+             <a href="#">Selection Sort</a>
+             <a href="#">Insertion Sort</a>
+             <a href="#">Quick Sort</a>
+             <a href="#">Counting Sort</a>
+             <a href="#">Radix Sort</a>
+             <a href="#">Merge Sort</a>
+             
+             <h2>Python MySQL</h2>
+             <a href="#">MySQL Get Started</a>
+             <a href="#">MySQL Create Database</a>
+             <a href="#">MySQL Create Table</a>
+             <a href="#">MySQL Insert</a>
+             <a href="#">MySQL Select</a>
+             <a href="#">MySQL Where</a>
+             <a href="#">MySQL Order By</a>
+             <a href="#">MySQL Delete</a>
+             <a href="#">MySQL Drop Table</a>
+             <a href="#">MySQL Update</a>
+             <a href="#">MySQL Limit</a>
+             <a href="#">MySQL Join</a>
+             
+             <h2>Python MongoDB</h2>
+             <a href="#">MongoDB Get Started</a>
+             <a href="#">MongoDB Create DB</a>
+             <a href="#">MongoDB Collection</a>
+             <a href="#">MongoDB Insert</a>
+             <a href="#">MongoDB Find</a>
+             <a href="#">MongoDB Query</a>
+             <a href="#">MongoDB Sort</a>
+             <a href="#">MongoDB Delete</a>
+             <a href="#">MongoDB Drop Collection</a>
+             <a href="#">MongoDB Update</a>
+             <a href="#">MongoDB Limit</a>
+             
+             <h2>Python Reference</h2>
+             <a href="#">Python Overview</a>
+             <a href="#">Python Built-in Functions</a>
+             <a href="#">Python String Methods</a>
+             <a href="#">Python List Methods</a>
+             <a href="#">Python Dictionary Methods</a>
+             <a href="#">Python Tuple Methods</a>
+             <a href="#">Python Set Methods</a>
+             <a href="#">Python File Methods</a>
+             <a href="#">Python Keywords</a>
+             <a href="#">Python Exceptions</a>
+             <a href="#">Python Glossary</a>
+             
+             <h2>Module Reference</h2>
+             <a href="#">Random Module</a>
+             <a href="#">Requests Module</a>
+             <a href="#">Statistics Module</a>
+             <a href="#">Math Module</a>
+             <a href="#">cMath Module</a>
+             
+             <h2>Python How To</h2>
+             <a href="#">Remove List Duplicates</a>
+             <a href="#">Reverse a String</a>
+             <a href="#">Add Two Numbers</a>
+             
+             <h2>Python Examples</h2>
+             <a href="#">Python Examples</a>
+             <a href="#">Python Compiler</a>
+             <a href="#">Python Exercises</a>
+             <a href="#">Python Quiz</a>
+             <a href="#">Python Server</a>
+             <a href="#">Python Syllabus</a>
+             <a href="#">Python Study Plan</a>
+             <a href="#">Python Interview Q&A</a>
+             <a href="#">Python Bootcamp</a>
+             <a href="#">python certification</a>
+             <a href="#">python Training</a>
+            
+        </div>
+       
+        <div class="main-content">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> > 
+                <a href="pythonhome.html">Python Tutorial</a>
+            </div>
+            <h1>Python Tutorial</h1>
+            <h2>Learn Python</h2>
+            <p>Python is a popular programming language.</p>
+            <p>Python can be used on a server to create web applications.</p>
+            
+            <h2>What is Python?</h2>
+            <ul>
+                <li>Python is a popular programming language</li>
+                <li>Python was created by Guido van Rossum, and released in 1991</li>
+                <li>It is used for: web development (server-side), software development, mathematics, system scripting</li>
+            </ul>
+            
+            <h2>What can Python do?</h2>
+            <ul>
+                <li>Python can be used on a server to create web applications</li>
+                <li>Python can be used alongside software to create workflows</li>
+                <li>Python can connect to database systems. It can also read and modify files</li>
+                <li>Python can be used to handle big data and perform complex mathematics</li>
+                <li>Python can be used for rapid prototyping, or for production-ready software development</li>
+            </ul>
+            
+            <h2>Python Example</h2>
+            <p>Let's look at a simple Python example:</p>
+            <div class="code-example">
+                <pre><code><span class="code-keyword">print</span>(<span class="code-string">"Hello, World!"</span>)</code></pre>
+            </div>
+            
+            <h2>Python Syntax compared to other programming languages</h2>
+            <ul>
+                <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics</li>
+                <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses</li>
+                <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose</li>
+            </ul>
+            
+            <div class="button-container">
+                <button class="left">Previous</button>
+                <button class="right">Next</button>
+            </div>
+        </div>
+        
+        <div class="right-blank">
+            
+        </div>
+        
+    </div>
+    <script>
+    function scrollLeft() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    }
+
+    function scrollRight() {
+        const menu = document.getElementById('menu');
+        if (menu) {
+            menu.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    }
+
+    // Enhanced scroll functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.getElementById('menu');
+        const btnLeft = document.querySelector('.scroll-left');
+        const btnRight = document.querySelector('.scroll-right');
+
+        if (!menu || !btnLeft || !btnRight) {
+            console.error('Required elements missing: ', { menu, btnLeft, btnRight });
+            return;
+        }
+
+        const getStep = () => Math.max(200, Math.floor(menu.clientWidth * 0.7));
+
+        function updateButtons() {
+            const atStart = menu.scrollLeft <= 0;
+            const atEnd = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth - 1;
+            btnLeft.disabled = atStart;
+            btnRight.disabled = atEnd;
+        }
+
+        btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+
+        btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+
+        menu.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+    });
+     function toggleDropdown(button) {
+            const dropdown = button.parentElement;
+            const dropdownContent = dropdown.querySelector('.dropdown-content');
+            const isActive = dropdown.classList.contains('active');
+            
+            // Close all other dropdown toggle
+            document.querySelectorAll('.dropdown.active').forEach(activeDropdown => {
+                if (activeDropdown !== dropdown) {
+                    activeDropdown.classList.remove('active');
+                }
+            });
+            
+            // Toggle current dropdown
+            dropdown.classList.toggle('active');
+            
+            // Update arrow direction
+            if (dropdown.classList.contains('active')) {
+                button.innerHTML = button.innerHTML.replace('▼', '▲');
+            } else {
+                button.innerHTML = button.innerHTML.replace('▲', '▼');
+            }
+        }
+</script>
+
+    
+</body>
+</html>
