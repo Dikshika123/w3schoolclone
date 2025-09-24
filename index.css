@@ -1825,6 +1825,118 @@ header {
     font-size: 14px;
 }
 
+.cert-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cert-btn:hover {
+    background-color: #059862;
+    color: white;
+}
+
+.quick-reference {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.quick-reference h3 {
+    color: #04AA6D;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.ref-section {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.ref-section h4 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.ref-section code {
+    background-color: #e9ecef;
+    padding: 5px 8px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: #d63384;
+}
+
+.related-tutorials {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.related-tutorials h3 {
+    color: #04AA6D;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.related-tutorials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.related-tutorials li {
+    margin-bottom: 8px;
+}
+
+.related-tutorials a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.related-tutorials a:hover {
+    color: #04AA6D;
+}
+
+.sql-examples {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.sql-examples h3 {
+    color: #04AA6D;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.sql-examples ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sql-examples li {
+    margin-bottom: 8px;
+}
+
+.sql-examples a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.sql-examples a:hover {
+    color: #04AA6D;
+}
+
 .pricing {
     margin: 15px 0;
 }
