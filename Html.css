@@ -91,7 +91,7 @@ body {
 }
 
 .right-blank {
-    width: 250px;
+    width: 200px;
     background: #f8f9fa;
     border-left: 2px solid #04AA6D;
     padding: 20px;
@@ -327,7 +327,7 @@ body {
     }
 }
 .right-blank {
-    width: 250px;  
+    width: 200px;  
     height:100vh;         /* jitni chahiye utni rakho */
     background: #fff;  
     padding: 10px;
